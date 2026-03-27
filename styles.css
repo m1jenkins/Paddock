@@ -438,6 +438,12 @@ ul { list-style: none; }
     font-weight: 300;
     line-height: 1;
     color: var(--charcoal);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-item.active .service-item__number,
+.service-item:hover .service-item__number {
+    transform: rotate(90deg);
 }
 
 .service-item__content {
