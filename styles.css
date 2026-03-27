@@ -327,11 +327,11 @@ ul { list-style: none; }
    ============================================= */
 .brand-statement {
     background: var(--ivory);
-    padding: var(--section-pad) 40px;
+    padding: 100px 40px;
 }
 
 .brand-statement__inner {
-    max-width: 680px;
+    max-width: 840px;
     margin: 0 auto;
     text-align: center;
 }
@@ -340,11 +340,11 @@ ul { list-style: none; }
     font-family: var(--serif);
     font-style: italic;
     font-weight: 400;
-    font-size: clamp(18px, 2.5vw, 22px);
-    line-height: 1.7;
+    font-size: clamp(24px, 3.5vw, 32px);
+    line-height: 1.6;
     color: var(--charcoal);
     border: none;
-    margin-bottom: 64px;
+    margin-bottom: 0;
 }
 
 .brand-statement__stats {
