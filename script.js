@@ -99,4 +99,29 @@
             }, 3000);
         });
     }
+
+    // ---- Services Editorial Accordion ----
+    const serviceItems = document.querySelectorAll('.service-item');
+    const serviceImages = document.querySelectorAll('.services__image');
+
+    if (serviceItems.length > 0 && serviceImages.length > 0) {
+        serviceItems.forEach((item, index) => {
+            // Function to handle activation
+            const activateService = () => {
+                // Remove active class from all items and images
+                serviceItems.forEach(el => el.classList.remove('active'));
+                serviceImages.forEach(el => el.classList.remove('active'));
+
+                // Add active class to current
+                item.classList.add('active');
+                if (serviceImages[index]) {
+                    serviceImages[index].classList.add('active');
+                }
+            };
+
+            // Trigger on hover and click for robust experience
+            item.addEventListener('mouseenter', activateService);
+            item.addEventListener('click', activateService);
+        });
+    }
 })();
