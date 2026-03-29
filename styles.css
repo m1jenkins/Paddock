@@ -739,11 +739,11 @@ ul { list-style: none; }
 }
 
 .about__inner {
-    max-width: 1080px;
+    max-width: 840px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 72px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -787,12 +787,6 @@ ul { list-style: none; }
     color: var(--light-cream);
 }
 
-.about__image-placeholder {
-    width: 100%;
-    aspect-ratio: 4/5;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(139, 115, 85, 0.2);
-}
 
 
 /* =============================================
@@ -1011,14 +1005,6 @@ ul { list-style: none; }
         margin: 0 auto;
     }
 
-    .about__inner {
-        grid-template-columns: 1fr;
-        gap: 48px;
-    }
-
-    .about__image {
-        order: -1;
-    }
 
     .journal__grid {
         grid-template-columns: 1fr;
@@ -1052,7 +1038,11 @@ ul { list-style: none; }
     }
 
     .hero__headline {
-        font-size: clamp(30px, 8vw, 44px);
+        font-size: clamp(36px, 10vw, 52px);
+    }
+
+    .hero__subtext {
+        font-size: 19px;
     }
 
     .hero__rule {
