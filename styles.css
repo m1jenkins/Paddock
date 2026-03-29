@@ -736,15 +736,17 @@ ul { list-style: none; }
 .about {
     background: var(--navy);
     padding: var(--section-pad) 40px;
+    overflow: hidden;
 }
 
 .about__inner {
-    max-width: 840px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.about__top {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 72px;
 }
 
 .about__label {
@@ -760,31 +762,83 @@ ul { list-style: none; }
 .about__headline {
     font-family: var(--serif);
     font-weight: 300;
-    font-size: clamp(28px, 4vw, 40px);
-    line-height: 1.2;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
     color: var(--light-cream);
-    margin-bottom: 24px;
+    margin-bottom: 0;
+}
+
+.about__headline-accent {
+    font-style: italic;
+    color: var(--gold);
+    display: block;
+}
+
+.about__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.about__col--left {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    padding-top: 8px;
+}
+
+.about__accent-line {
+    width: 3px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, var(--gold) 0%, rgba(139, 115, 85, 0.15) 100%);
+    border-radius: 2px;
+    transition: background 0.6s ease;
+}
+
+.about__col--left:hover .about__accent-line {
+    background: linear-gradient(180deg, var(--gold) 0%, rgba(139, 115, 85, 0.5) 100%);
+}
+
+.about__pullquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.5;
+    color: var(--light-cream);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about__col--right {
+    padding-top: 8px;
 }
 
 .about__body {
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.85;
     color: var(--light-cream);
-    opacity: 0.85;
-    margin-bottom: 28px;
+    opacity: 0.8;
+    margin-bottom: 24px;
 }
 
 .about__link {
     font-family: var(--sans);
     font-size: 13px;
     font-weight: 500;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     color: var(--gold);
-    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease, gap 0.3s ease;
 }
 
 .about__link:hover {
     color: var(--light-cream);
+    gap: 10px;
 }
 
 
@@ -1005,6 +1059,18 @@ ul { list-style: none; }
         margin: 0 auto;
     }
 
+    .about__columns {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about__top {
+        margin-bottom: 48px;
+    }
+
+    .about__col--left {
+        max-width: 520px;
+    }
 
     .journal__grid {
         grid-template-columns: 1fr;
