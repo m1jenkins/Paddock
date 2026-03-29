@@ -100,28 +100,30 @@
         });
     }
 
-    // ---- Services Editorial Accordion ----
-    const serviceItems = document.querySelectorAll('.service-item');
+    // ---- Services Row Hover — debounced image crossfade ----
+    const serviceRows = document.querySelectorAll('.service-row');
     const serviceImages = document.querySelectorAll('.services__image');
+    let imageTimer = null;
 
-    if (serviceItems.length > 0 && serviceImages.length > 0) {
-        serviceItems.forEach((item, index) => {
-            // Function to handle activation
-            const activateService = () => {
-                // Remove active class from all items and images
-                serviceItems.forEach(el => el.classList.remove('active'));
-                serviceImages.forEach(el => el.classList.remove('active'));
+    if (serviceRows.length > 0 && serviceImages.length > 0) {
+        serviceRows.forEach((row, index) => {
+            const activateRow = () => {
+                // Immediately update row highlights
+                serviceRows.forEach(el => el.classList.remove('active'));
+                row.classList.add('active');
 
-                // Add active class to current
-                item.classList.add('active');
-                if (serviceImages[index]) {
-                    serviceImages[index].classList.add('active');
-                }
+                // Debounce image swap so rapid mouse moves don't flash
+                clearTimeout(imageTimer);
+                imageTimer = setTimeout(() => {
+                    serviceImages.forEach(el => el.classList.remove('active'));
+                    if (serviceImages[index]) {
+                        serviceImages[index].classList.add('active');
+                    }
+                }, 150);
             };
 
-            // Trigger on hover and click for robust experience
-            item.addEventListener('mouseenter', activateService);
-            item.addEventListener('click', activateService);
+            row.addEventListener('mouseenter', activateRow);
+            row.addEventListener('click', activateRow);
         });
     }
 })();
