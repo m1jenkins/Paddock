@@ -100,30 +100,4 @@
         });
     }
 
-    // ---- Services Row Hover — debounced image crossfade ----
-    const serviceRows = document.querySelectorAll('.service-row');
-    const serviceImages = document.querySelectorAll('.services__image');
-    let imageTimer = null;
-
-    if (serviceRows.length > 0 && serviceImages.length > 0) {
-        serviceRows.forEach((row, index) => {
-            const activateRow = () => {
-                // Immediately update row highlights
-                serviceRows.forEach(el => el.classList.remove('active'));
-                row.classList.add('active');
-
-                // Debounce image swap so rapid mouse moves don't flash
-                clearTimeout(imageTimer);
-                imageTimer = setTimeout(() => {
-                    serviceImages.forEach(el => el.classList.remove('active'));
-                    if (serviceImages[index]) {
-                        serviceImages[index].classList.add('active');
-                    }
-                }, 150);
-            };
-
-            row.addEventListener('mouseenter', activateRow);
-            row.addEventListener('click', activateRow);
-        });
-    }
 })();
