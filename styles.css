@@ -1034,6 +1034,17 @@ ul { list-style: none; }
         padding: var(--section-pad-mob) 24px;
     }
 
+    .service-row {
+        grid-template-columns: 32px 1fr;
+        gap: 16px 20px;
+    }
+
+    .service-row__link {
+        grid-column: 2;
+        justify-self: start;
+        margin-top: -8px;
+    }
+
     .contact {
         padding: var(--section-pad-mob) 24px;
     }
