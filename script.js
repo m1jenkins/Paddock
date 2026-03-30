@@ -80,23 +80,50 @@
         });
     });
 
-    // ---- Contact form (prevent default, show confirmation) ----
+    // ---- Contact form (Google Sheets Integration) ----
     var form = document.getElementById('contact-form');
     if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             var btn = document.getElementById('contact-submit');
-            btn.textContent = 'Inquiry Sent';
+            var originalText = btn.textContent;
+            
+            // Web App URL for Google Sheets integration
+            var scriptURL = 'https://script.google.com/macros/s/AKfycbzd4i7cn8vj9O8j2dhvQVdEk6ltNPweToX-oppo_N6tlzykdl7MsT77ii_cYYTDbCK6wA/exec';
+
+            btn.textContent = 'Sending...';
             btn.disabled = true;
-            btn.style.opacity = '0.5';
-            btn.style.cursor = 'default';
-            form.reset();
-            setTimeout(function () {
-                btn.textContent = 'Send Inquiry';
+            btn.style.opacity = '0.7';
+            btn.style.cursor = 'not-allowed';
+
+            var formData = new FormData(form);
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: formData, 
+                mode: 'no-cors' // Allows submitting without dealing with strict CORS policy
+            })
+            .then(function() {
+                btn.textContent = 'Inquiry Sent';
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'default';
+                form.reset();
+                
+                // Reset button after a few seconds
+                setTimeout(function () {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    btn.style.opacity = '';
+                    btn.style.cursor = 'pointer';
+                }, 3000);
+            })
+            .catch(function(error) {
+                console.error('Error!', error.message);
+                btn.textContent = 'Failed. Try Again.';
                 btn.disabled = false;
                 btn.style.opacity = '';
-                btn.style.cursor = '';
-            }, 3000);
+                btn.style.cursor = 'pointer';
+            });
         });
     }
 
