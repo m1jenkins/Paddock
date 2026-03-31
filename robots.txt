@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.provenance.auto/sitemap.xml
+Sitemap: https://provenance-auto.com/sitemap.xml
