@@ -109,13 +109,8 @@
                 btn.style.cursor = 'default';
                 form.reset();
                 
-                // Reset button after a few seconds
-                setTimeout(function () {
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                    btn.style.opacity = '';
-                    btn.style.cursor = 'pointer';
-                }, 3000);
+                // Redirect to success page for conversion tracking
+                window.location.href = 'success.html';
             })
             .catch(function(error) {
                 console.error('Error!', error.message);
