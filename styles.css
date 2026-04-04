@@ -1241,8 +1241,13 @@ ul { list-style: none; }
 
 /* ---------- Breadcrumb ---------- */
 .breadcrumb {
-    padding: 100px 48px 0;
-    background: var(--ivory);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0 48px;
+    background: transparent;
 }
 
 .breadcrumb__inner {
@@ -1250,7 +1255,8 @@ ul { list-style: none; }
     margin: 0 auto;
     font-family: var(--sans);
     font-size: 14px;
-    color: var(--stone);
+    color: var(--light-cream);
+    opacity: 0.8;
 }
 
 .breadcrumb a {
@@ -1259,19 +1265,20 @@ ul { list-style: none; }
 }
 
 .breadcrumb a:hover {
-    color: var(--charcoal);
+    color: var(--ivory);
 }
 
 .breadcrumb__sep {
     margin: 0 8px;
     color: var(--light-cream);
+    opacity: 0.6;
 }
 
 /* ---------- City Hero ---------- */
 .city-hero {
     position: relative;
     background: radial-gradient(circle at 50% 30%, #17283c 0%, var(--navy) 80%);
-    padding: 60px 48px var(--section-pad);
+    padding: 150px 48px var(--section-pad);
     text-align: center;
     overflow: hidden;
 }
