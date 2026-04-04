@@ -1233,3 +1233,636 @@ ul { list-style: none; }
         font-size: clamp(24px, 5vw, 32px);
     }
 }
+
+
+/* =============================================
+   CITY PAGES, SERVICE PAGES, BLOG — Styles
+   ============================================= */
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    padding: 100px 48px 0;
+    background: var(--ivory);
+}
+
+.breadcrumb__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--stone);
+}
+
+.breadcrumb a {
+    color: var(--gold);
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--charcoal);
+}
+
+.breadcrumb__sep {
+    margin: 0 8px;
+    color: var(--light-cream);
+}
+
+/* ---------- City Hero ---------- */
+.city-hero {
+    background: var(--ivory);
+    padding: 60px 48px var(--section-pad);
+    text-align: center;
+}
+
+.city-hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- City Content ---------- */
+.city-content {
+    background: var(--warm-white);
+    padding: var(--section-pad) 48px;
+}
+
+.city-content__inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.city-content__text {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-top: 24px;
+}
+
+.city-content__text:first-of-type {
+    margin-top: 32px;
+}
+
+/* ---------- Services Summary (on city pages) ---------- */
+.services-summary {
+    background: var(--ivory);
+    padding: var(--section-pad) 48px;
+}
+
+.services-summary__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-summary__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.services-summary__item {
+    background: var(--warm-white);
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--light-cream);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-summary__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.services-summary__item h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 12px;
+}
+
+.services-summary__item p {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--stone);
+    margin-bottom: 16px;
+}
+
+.services-summary__item a {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+}
+
+.services-summary__item a:hover {
+    color: var(--charcoal);
+}
+
+/* ---------- FAQ Section ---------- */
+.faq {
+    background: var(--warm-white);
+    padding: var(--section-pad) 48px;
+}
+
+.faq__inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq__list {
+    margin-top: 48px;
+}
+
+.faq__item {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--light-cream);
+}
+
+.faq__item:first-child {
+    border-top: 1px solid var(--light-cream);
+}
+
+.faq__question {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.faq__answer {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--stone);
+}
+
+/* ---------- City CTA ---------- */
+.city-cta {
+    background: var(--navy);
+    padding: var(--section-pad) 48px;
+    text-align: center;
+}
+
+.city-cta__inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.city-cta .section-heading {
+    color: var(--ivory);
+}
+
+.city-cta__text {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(250, 248, 245, 0.75);
+    margin: 24px 0 40px;
+}
+
+/* ---------- Cities We Serve (Homepage) ---------- */
+.cities {
+    background: var(--warm-white);
+    padding: var(--section-pad) 48px;
+}
+
+.cities__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cities__subtext {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--stone);
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto 48px;
+}
+
+.cities__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.cities__group {
+    text-align: left;
+}
+
+.cities__region-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--light-cream);
+}
+
+.cities__list li {
+    margin-bottom: 8px;
+}
+
+.cities__list a {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--stone);
+    transition: color 0.2s ease;
+}
+
+.cities__list a:hover {
+    color: var(--gold);
+}
+
+/* ---------- Service Detail Pages ---------- */
+.service-detail {
+    background: var(--warm-white);
+    padding: var(--section-pad) 48px;
+}
+
+.service-detail__inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-detail__section {
+    margin-bottom: 48px;
+}
+
+.service-detail__section:last-child {
+    margin-bottom: 0;
+}
+
+.service-detail__subheading {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.service-detail__text {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--charcoal);
+}
+
+.service-detail__text strong {
+    color: var(--charcoal);
+    font-weight: 500;
+}
+
+/* ---------- Service Cities Links ---------- */
+.service-cities {
+    background: var(--ivory);
+    padding: 80px 48px;
+    text-align: center;
+}
+
+.service-cities__inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-cities__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+    margin-top: 32px;
+}
+
+.service-cities__links a {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--stone);
+    padding: 8px 20px;
+    border: 1px solid var(--light-cream);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.service-cities__links a:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.service-cities__all {
+    display: inline-block;
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+}
+
+/* ---------- Blog Header ---------- */
+.blog-header {
+    background: var(--ivory);
+    padding: 60px 48px var(--section-pad);
+    text-align: center;
+}
+
+.blog-header__inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- Blog Listing ---------- */
+.blog-listing {
+    background: var(--warm-white);
+    padding: 0 48px var(--section-pad);
+}
+
+.blog-listing__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0;
+}
+
+.blog-card {
+    border-bottom: 1px solid var(--light-cream);
+}
+
+.blog-card:first-child {
+    border-top: 1px solid var(--light-cream);
+}
+
+.blog-card__link {
+    display: block;
+    padding: 40px 0;
+    transition: opacity 0.2s ease;
+}
+
+.blog-card__link:hover {
+    opacity: 0.8;
+}
+
+.blog-card__category {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+.blog-card__title {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.blog-card__excerpt {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--stone);
+    margin-bottom: 12px;
+}
+
+.blog-card__meta {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--stone);
+    opacity: 0.7;
+}
+
+/* ---------- Blog Post ---------- */
+.blog-post {
+    background: var(--warm-white);
+    padding: 40px 48px var(--section-pad);
+}
+
+.blog-post__inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.blog-post__header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--light-cream);
+}
+
+.blog-post__category {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.blog-post__title {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.blog-post__meta {
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--stone);
+}
+
+.blog-post__section {
+    margin-bottom: 40px;
+}
+
+.blog-post__subheading {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.blog-post__text {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.85;
+    color: var(--charcoal);
+}
+
+.blog-post__text a {
+    color: var(--gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.blog-post__text a:hover {
+    color: var(--charcoal);
+}
+
+.blog-post__text strong {
+    font-weight: 500;
+}
+
+/* Blog Post CTA */
+.blog-post__cta {
+    background: var(--navy);
+    padding: 48px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 56px 0;
+}
+
+.blog-post__cta h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--ivory);
+    margin-bottom: 12px;
+}
+
+.blog-post__cta p {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(250, 248, 245, 0.75);
+    margin-bottom: 24px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Blog Related Articles */
+.blog-post__related {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--light-cream);
+}
+
+.blog-post__related h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 16px;
+}
+
+.blog-post__related ul {
+    list-style: none;
+}
+
+.blog-post__related li {
+    margin-bottom: 12px;
+}
+
+.blog-post__related a {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--gold);
+    transition: color 0.2s ease;
+}
+
+.blog-post__related a:hover {
+    color: var(--charcoal);
+}
+
+/* ---------- Footer Enhancements ---------- */
+.footer__section-title {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.footer__services,
+.footer__cities {
+    margin-top: 8px;
+}
+
+/* ---------- Mobile Responsive for New Sections ---------- */
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 80px 24px 0;
+    }
+
+    .city-hero {
+        padding: 40px 24px var(--section-pad-mob);
+    }
+
+    .city-content,
+    .services-summary,
+    .faq,
+    .service-detail,
+    .blog-post {
+        padding: var(--section-pad-mob) 24px;
+    }
+
+    .city-cta {
+        padding: var(--section-pad-mob) 24px;
+    }
+
+    .cities {
+        padding: var(--section-pad-mob) 24px;
+    }
+
+    .cities__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .services-summary__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-cities {
+        padding: 56px 24px;
+    }
+
+    .service-cities__links {
+        gap: 8px 12px;
+    }
+
+    .blog-header {
+        padding: 40px 24px var(--section-pad-mob);
+    }
+
+    .blog-listing {
+        padding: 0 24px var(--section-pad-mob);
+    }
+
+    .blog-card__title {
+        font-size: 22px;
+    }
+
+    .blog-post__cta {
+        padding: 32px 24px;
+    }
+
+    .faq__question {
+        font-size: 19px;
+    }
+
+    .service-detail__subheading {
+        font-size: 24px;
+    }
+}
