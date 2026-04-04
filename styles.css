@@ -1269,24 +1269,41 @@ ul { list-style: none; }
 
 /* ---------- City Hero ---------- */
 .city-hero {
-    background: var(--ivory);
+    position: relative;
+    background: radial-gradient(circle at 50% 30%, #17283c 0%, var(--navy) 80%);
     padding: 60px 48px var(--section-pad);
     text-align: center;
+    overflow: hidden;
+}
+
+.city-hero::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(139, 115, 85, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .city-hero__content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .city-hero .hero__headline {
-    color: var(--charcoal);
-    text-shadow: none;
+    color: var(--ivory);
+    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .city-hero .hero__subtext {
-    color: var(--stone);
-    opacity: 1;
+    color: var(--light-cream);
+    opacity: 0.8;
 }
 
 /* ---------- City Content ---------- */
