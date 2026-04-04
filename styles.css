@@ -1279,6 +1279,16 @@ ul { list-style: none; }
     margin: 0 auto;
 }
 
+.city-hero .hero__headline {
+    color: var(--charcoal);
+    text-shadow: none;
+}
+
+.city-hero .hero__subtext {
+    color: var(--stone);
+    opacity: 1;
+}
+
 /* ---------- City Content ---------- */
 .city-content {
     background: var(--warm-white);
