@@ -1,0 +1,25 @@
+Continue/finish the Provenance Auto Advisory premium redesign on this static site.
+
+## CRITICAL media direction (new)
+Use official Porsche and BMW launch PRESS photography as primary website media.
+Especially feature Porsche 911 Dakar launch photos (Moab / Shade Green / Rallye Design) — those are the hero look.
+
+Assets already on disk (USE THESE — do not replace with random Unsplash stock):
+- images/press/dakar-01.jpg … dakar-07.jpg, Dune-Dakar_highres.jpg (Porsche Newsroom 911 Dakar)
+- images/hero-porsche.jpg (Dakar)
+- images/card-porsche.jpg (Dakar Moab)
+- images/card-bmw.jpg and images/press/bmw-m4-launch.jpg (BMW M4 launch press)
+
+Wire these into homepage hero, services/acquisition cards, and any gallery strips. Add discreet credits if needed ("Image: Porsche AG" / "Image: BMW AG"). Never imply press cars are Provenance inventory.
+
+You may add more official press images from newsroom.porsche.com (911 Dakar) and press.bmwgroup.com / mediapool.bmwgroup.com for BMW launches if useful.
+
+## Business positioning (still primary)
+Lead with:
+1) Acquiring high-value / mid-market vehicles (Porsche, BMW, similar)
+2) Complex deals: titles in transit, cars not in seller’s name, crashed/salvage/damaged, messy paperwork
+
+## Design
+Premium sparse Mobbin-inspired editorial redesign per PRODUCT.md and .cursor-redesign-refs/. Keep static HTML. Branch redesign/premium-acquisition already exists — continue on it, finish homepage + shared system, open PR.
+
+Leave .paddock-* and .cursor-redesign-refs untracked.
