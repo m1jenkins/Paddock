@@ -4,101 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Texas's Luxury Car Consultant | Provenance Auto Advisory</title>
-    <meta name="description" content="Schedule a free consultation with Provenance, Texas's premier luxury and exotic car advisor. We source rare, exotic, and collectible vehicles on your behalf across Houston, Dallas, Austin, San Antonio, and all of Texas.">
-    <meta name="keywords" content="luxury car consultant Texas, exotic car advisor contact, car broker Texas, luxury auto advisory consultation">
+    <title>Start an Acquisition | Provenance Auto Advisory</title>
+    <meta name="description" content="Start a private vehicle acquisition with Provenance. Porsche, BMW, and similar cars in Texas — including titles in transit, ownership gaps, salvage, and damage.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.provenance-auto.com/inquiry.html">
 
-    <!-- Geo Meta Tags (Local SEO) -->
     <meta name="geo.region" content="US-TX" />
     <meta name="geo.placename" content="Texas" />
     <meta name="geo.position" content="31.9686;-99.9018" />
     <meta name="ICBM" content="31.9686, -99.9018" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.provenance-auto.com/inquiry.html">
-    <meta property="og:title" content="Contact Texas's Luxury Car Consultant | Provenance Auto Advisory">
-    <meta property="og:description" content="Schedule a free consultation with Provenance, Texas's premier luxury and exotic car advisor.">
+    <meta property="og:title" content="Start an Acquisition | Provenance Auto Advisory">
+    <meta property="og:description" content="Private consultation for Porsche, BMW, and similar acquisitions — including complicated titles and damaged cars.">
+    <meta property="og:image" content="https://www.provenance-auto.com/images/hero-porsche.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KP9W4DQD97"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-KP9W4DQD97');
     </script>
 </head>
 
-<body>
-    <!-- ===== NAVIGATION ===== -->
+<body class="page-inner page-inquiry">
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="nav" id="nav">
         <div class="nav__inner">
             <a href="/" class="nav__wordmark">PROVENANCE</a>
-            <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav__links" id="nav-links">
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
+            <div class="nav__end">
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#complex">Complex deals</a></li>
+                    <li><a href="/inquiry.html">Contact</a></li>
+                </ul>
+                <a href="/inquiry.html" class="btn nav__cta">Start an acquisition</a>
+                <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- ===== MOBILE MENU OVERLAY ===== -->
     <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__close" id="mobile-close" aria-label="Close menu">✕</button>
+        <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.25"/>
+            </svg>
+        </button>
         <ul class="mobile-menu__links">
             <li><a href="/#services">Services</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><a href="/#complex">Complex deals</a></li>
+            <li><a href="/inquiry.html">Contact</a></li>
         </ul>
+        <a href="/inquiry.html" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
     </div>
 
-    <main>
-        <!-- ===== CONTACT ===== -->
-        <section class="contact" id="contact" style="padding-top: 140px; min-height: 80vh;">
-            <div class="contact__inner reveal visible">
-                <h2 class="contact__headline">Begin a Conversation</h2>
-                <p class="contact__subtext">Acquisitions begin with a private consultation. Tell us what you're looking for,
-                    or simply introduce yourself.</p>
-                <p class="contact__fee-note">Every engagement begins with a complimentary consultation. Fee structures are tailored to each acquisition.</p>
+    <main id="main">
+        <section class="contact" id="contact">
+            <div class="contact__inner">
+                <h1 class="contact__headline">Start an acquisition</h1>
+                <p class="contact__subtext">Tell us the car, the complication, or both. Private consultation. No showroom, no inventory pitch.</p>
+                <p class="contact__fee-note">Complimentary to begin. Fees are set per engagement.</p>
                 <form class="contact__form" id="contact-form">
-                    <input type="text" name="name" placeholder="Name" aria-label="Name" class="contact__input" id="contact-name" required>
-                    <input type="email" name="email" placeholder="Email" aria-label="Email" class="contact__input" id="contact-email" required>
-                    <input type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone" class="contact__input" id="contact-phone">
-                    <textarea name="message" placeholder="Message" aria-label="Message" class="contact__textarea" id="contact-message" rows="3"
-                        required></textarea>
-                    <button type="submit" class="btn btn--outline" id="contact-submit">Send Inquiry</button>
+                    <label class="contact__label" for="contact-name">Name</label>
+                    <input type="text" name="name" id="contact-name" class="contact__input" autocomplete="name" required>
+
+                    <label class="contact__label" for="contact-email">Email</label>
+                    <input type="email" name="email" id="contact-email" class="contact__input" autocomplete="email" required>
+
+                    <label class="contact__label" for="contact-phone">Phone <span>(optional)</span></label>
+                    <input type="tel" name="phone" id="contact-phone" class="contact__input" autocomplete="tel">
+
+                    <label class="contact__label" for="contact-need">What do you need</label>
+                    <select name="need" id="contact-need" class="contact__select" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option>Buy a Porsche, BMW, or similar</option>
+                        <option>Title in transit or not in the seller’s name</option>
+                        <option>Salvage, crash, or damage</option>
+                        <option>Something else</option>
+                    </select>
+
+                    <label class="contact__label" for="contact-message">Message</label>
+                    <textarea name="message" id="contact-message" class="contact__textarea" rows="4" required></textarea>
+
+                    <button type="submit" class="btn btn--primary" id="contact-submit">Send inquiry</button>
                 </form>
                 <div class="contact__alt">
-                    <p>mason@provenance-auto.com · Serving all of Texas · Based in Austin</p>
+                    <p><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a> · Austin · all of Texas</p>
                     <p class="contact__channels">WhatsApp · <a href="https://signal.me/#eu/3Qt3tskYypWeG5ZsT9nigsOMLvf4CP4vXeK-FSj1GANJiJPJOipMdL6HtICsxm3g">Signal</a></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer class="footer" id="footer">
         <div class="footer__inner">
-            <p class="footer__wordmark">PROVENANCE</p>
-            <ul class="footer__links">
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
-            <p class="footer__copy">© 2026 Provenance. All rights reserved.</p>
+            <div class="footer__top">
+                <div>
+                    <p class="footer__wordmark">PROVENANCE</p>
+                    <p class="footer__blurb">Buyer-side acquisition for Porsche, BMW, and similar vehicles. Texas.</p>
+                </div>
+                <div>
+                    <p class="footer__section-title">Services</p>
+                    <ul class="footer__links">
+                        <li><a href="/services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
+                        <li><a href="/#complex">Complex deals</a></li>
+                        <li><a href="/services/exotic-car-sourcing.html">Sourcing</a></li>
+                        <li><a href="/services/classic-car-advisor.html">Classics</a></li>
+                        <li><a href="/services/sell-exotic-car.html">Disposition</a></li>
+                        <li><a href="/inquiry.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__section-title">Texas</p>
+                    <div class="footer__cities-list">
+                        <a href="/houston.html">Houston</a>
+                        <a href="/dallas.html">Dallas</a>
+                        <a href="/austin.html">Austin</a>
+                        <a href="/san-antonio.html">San Antonio</a>
+                        <a href="/fort-worth.html">Fort Worth</a>
+                        <a href="/the-woodlands.html">The Woodlands</a>
+                        <a href="/plano.html">Plano</a>
+                        <a href="/frisco.html">Frisco</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG (911 Dakar launch) and BMW AG (M4 launch). Press vehicles shown are not Provenance inventory.</p>
         </div>
     </footer>
 
