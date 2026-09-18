@@ -67,3 +67,10 @@ Credit discreetly in footer or image captions if required by press terms (e.g. �
 3. Stay specific: Porsche/BMW-class and messy titles beat generic “exotic luxury.”
 4. Stay discreet: premium, calm, few competing claims above the fold.
 5. Do not invent proof. If it is not in the product record, it does not appear as a claim.
+
+
+## SEO + marque expansion (2026-09-18)
+- Implement `.paddock-seo/RESEARCH.md` fully.
+- Marques: Porsche, BMW, Ferrari, Aston Martin, other exotics; emphasize pre-owned exotic sourcing.
+- Media: `images/press/ferrari-296-*` (296 launch), `images/press/ferrari-f430-*` (pre-owned exotic), existing Dakar/BMW press.
+- Apply `.cursor/skills/unslop` to all new copy.

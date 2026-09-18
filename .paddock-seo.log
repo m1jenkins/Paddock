@@ -1,0 +1,20 @@
+Shipped on `redesign/premium-acquisition` as `182bb60`. PR: https://github.com/m1jenkins/Paddock/pull/3
+
+**Technical.** Canonical host stays `www.provenance-auto.com`. `vercel.json` 301s apex → www and forces `/sitemap.xml` to `application/xml`. Sitemap regenerated (46 URLs, `lastmod` 2026-09-18). Placeholder `+15120000000` is gone from JSON-LD. All city metas are unique, 147–165 characters, and aimed at acquisition + messy paper. `success.html` has a canonical (still `noindex`). BreadcrumbList was already on city/service pages and stays.
+
+**Positioning.** Homepage and key services now cover Porsche, BMW, Ferrari, Aston Martin, and other exotics, including pre-owned sourcing — not only new/complex deals.
+
+**Media.** 296 launch stills on the Ferrari card/break; F430 press stills on the pre-owned section. Dakar and BMW stay. Credits are `Image: Ferrari S.p.A.` / Porsche AG / BMW AG. Nothing is framed as inventory.
+
+**Guides** (linked from homepage `#guides`, services, `/blog/`, sitemap):
+- `/blog/buying-a-car-with-title-in-transit-texas.html`
+- `/blog/buying-a-car-not-in-the-sellers-name-texas.html`
+- `/blog/buying-salvage-or-rebuilt-title-porsche-bmw-texas.html`
+- `/blog/pre-owned-exotic-car-sourcing-texas.html`
+- `/blog/ferrari-296-sourcing-texas.html`
+
+Unslop ran on new/edited copy; new guides had no hard phrase hits. Houston/Dallas/Austin/San Antonio FAQs now match title / name-mismatch / exotic queries.
+
+Left untracked as requested: `.paddock-*`, `.cursor-redesign-refs`, `.cursor/skills/unslop` (full eval tree, not small). `PRODUCT.md` also left unstaged — it only pointed at those untracked paths.
+
+After this deploy, confirm `https://www.provenance-auto.com/sitemap.xml` returns XML. From this environment apex already served XML; www did not resolve, so that check has to happen on the live host. I could not click through the site in a browser here.

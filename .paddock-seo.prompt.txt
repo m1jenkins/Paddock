@@ -1,0 +1,15 @@
+You are working in /Users/user/Downloads/Paddock on branch redesign/premium-acquisition.
+
+Read and execute .paddock-seo/RESEARCH.md end-to-end. Also read .cursor/skills/unslop/SKILL.md and run an unslop rewrite pass on all new/edited marketing copy.
+
+## Must implement (SEO series)
+1. Technical: fix canonical host + sitemap/robots so the Sitemap URL returns real XML (www currently returns HTML). Add vercel.json redirects if needed. Regenerate complete sitemap. Remove placeholder +15120000000 from all JSON-LD. Rewrite all city meta descriptions (unique, ~150 chars, acquisition + complex-deal intent). Add BreadcrumbList on city/service pages. Fix success.html canonical.
+2. Positioning/on-page: homepage and key services must clearly cover Porsche, BMW, Ferrari, Aston Martin, and other exotics; stress pre-owned exotic sourcing as well as new/complex deals.
+3. Media: use images/press/ferrari-296-*.jpg for Ferrari 296 launch visuals; images/press/ferrari-f430-*.jpg for pre-owned exotic sourcing section (F430). Keep Porsche Dakar + BMW press assets. Discreet “Image: Ferrari S.p.A.” / Porsche AG / BMW AG credits; never present as inventory.
+4. Content: create the 5 blog guides listed in RESEARCH.md, update blog/index.html, internal links from homepage/services, sitemap.
+5. Unslop: apply unslop skill to homepage, new blogs, and edited service/city blurbs.
+
+## Ship
+Commit with a clear message, push to origin redesign/premium-acquisition, and update PR #3 body to summarize the SEO series + exotic expansion. Leave .paddock-* and .cursor-redesign-refs untracked (but .cursor/skills/unslop MAY be committed if useful, or leave untracked — prefer commit the skill if small).
+
+Do not stop after planning — implement fully.
