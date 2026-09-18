@@ -186,27 +186,17 @@
 </head>
 
 <body class="page-home">
-    <!--
-      THESIS: Buyer-side acquisition of Porsche, BMW, Ferrari, Aston Martin, and other exotics — new, pre-owned, and stalled titles — not a lifestyle dealer brochure.
-      OWN-WORLD: Cream paper, charcoal ink, Caslon display + Grotesk UI, full-bleed official press photography, hairline rules, no card chrome.
-      STORY: Visitor sees 911 Dakar (Shade Green / Moab), understands we buy the car (including used Ferrari/Aston) and close messy paper, starts an acquisition.
-      FIRST VIEWPORT: Full-bleed Shade Green 911 Dakar in Moab; headline and primary CTA bottom-left; press credit bottom-right.
-      FORM: Pinned editorial sparse (Kobu/Freight photography, Intercom-like service rows as type not icons). Brief-pinned; code-led.
-      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
-    -->
-
     <a class="skip-link" href="#main">Skip to content</a>
-
     <nav class="nav" id="nav">
         <div class="nav__inner">
             <a href="#hero" class="nav__wordmark">PROVENANCE</a>
             <div class="nav__end">
                 <ul class="nav__links" id="nav-links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#complex">Complex deals</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#complex">Title problems</a></li>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#services">Your next car</a></li>
                 </ul>
-                <a href="#contact" class="btn nav__cta">Start an acquisition</a>
+                <a href="#contact" class="btn nav__cta">Start a trade-in</a>
                 <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
                     <span></span>
                     <span></span>
@@ -214,7 +204,6 @@
             </div>
         </div>
     </nav>
-
     <div class="mobile-menu" id="mobile-menu">
         <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -222,11 +211,12 @@
             </svg>
         </button>
         <ul class="mobile-menu__links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#complex">Complex deals</a></li>
+            <li><a href="#complex">Title problems</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#services">Your next car</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
+        <a href="#contact" class="btn btn--primary mobile-menu__cta">Start a trade-in</a>
     </div>
 
     <main id="main">
@@ -239,136 +229,99 @@
             </div>
             <div class="hero__scrim" aria-hidden="true"></div>
             <div class="hero__copy">
-                <h1 class="hero__headline">High-value cars.<br><em>Complicated deals.</em></h1>
-                <p class="hero__subtext">Porsche, BMW, Ferrari, Aston Martin, and other exotics. New allocations, pre-owned sourcing, titles in transit, cars not in the seller’s name, salvage and damage. Texas.</p>
-                <a href="#contact" class="btn btn--primary">Start an acquisition</a>
+                <h1 class="hero__headline">Trade in your exotic.<br> <em>Even when the title isn’t clean.</em></h1>
+                <p class="hero__subtext">No title, a rebuilt title, a car that isn’t in your name. Dealers walk away from that paperwork. We sort it out and close the deal for you, anywhere in Texas.</p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">Start a trade-in</a>
+                    <a href="#how" class="hero__secondary">How it works</a>
+                </div>
             </div>
         </section>
 
-        <section class="position" id="position">
-            <div class="position__inner">
-                <p class="position__statement">Dealers represent the seller. Provenance represents you. We buy Porsche, BMW, Ferrari, Aston Martin, and other exotics — new and pre-owned — and we close the paper, including the transactions other buyers will not touch.</p>
+        <section class="titles" id="complex">
+            <div class="titles__header">
+                <h2 class="section-heading">The paperwork that stops a <span class="nowrap">trade-in</span></h2>
+                <p class="titles__lede">A dealer’s trade-in desk sees a problem title and either passes or offers a number that assumes the worst. We work out the actual problem and price the actual car.</p>
+            </div>
+            <div class="titles__grid">
+                <article class="titles__item">
+                    <h3 class="titles__name">No title</h3>
+                    <p class="titles__body">Lost, never transferred, or still in the mail from the last sale. We work out what’s missing and get the car to where it can be sold.</p>
+                    <a class="titles__link" href="blog/buying-a-car-with-title-in-transit-texas.html">Titles in transit</a>
+                </article>
+                <article class="titles__item">
+                    <h3 class="titles__name">Rebuilt or salvage</h3>
+                    <p class="titles__body">A branded title doesn’t make the car worthless. We price it for what it is, with the inspection and history to back the number up.</p>
+                    <a class="titles__link" href="blog/buying-salvage-or-rebuilt-title-porsche-bmw-texas.html">Rebuilt and salvage titles</a>
+                </article>
+                <article class="titles__item">
+                    <h3 class="titles__name">Not in your name</h3>
+                    <p class="titles__body">It might be inherited, titled to a company, or bought without the transfer ever being filed. We work the ownership chain instead of treating the car as a dead end.</p>
+                    <a class="titles__link" href="blog/buying-a-car-not-in-the-sellers-name-texas.html">When the name doesn’t match</a>
+                </article>
+                <article class="titles__item">
+                    <h3 class="titles__name">Something else</h3>
+                    <p class="titles__body">Out-of-state paper, an open lien, gaps in the history. If something about the car makes selling it hard, tell us what it is.</p>
+                    <a class="titles__link" href="#contact">Describe your situation</a>
+                </article>
             </div>
         </section>
 
-        <section class="marques" id="acquire">
-            <div class="marques__grid">
-                <article class="marque marque--porsche">
-                    <div class="marque__frame">
+        <section class="how" id="how">
+            <div class="how__inner">
+                <div class="how__header">
+                    <h2 class="section-heading">How a <span class="nowrap">trade-in</span> works</h2>
+                    <p class="how__lede">We represent you, not the dealership. You deal with one person from the first call to the handover.</p>
+                </div>
+                <ol class="how__steps">
+                    <li class="how__step">
+                        <span class="how__num" aria-hidden="true">1</span>
+                        <h3 class="how__title">Tell us the car and the problem</h3>
+                        <p class="how__body">Year, make, model, and what’s wrong with the paperwork. Email, Signal, or the form below. The consultation is free.</p>
+                    </li>
+                    <li class="how__step">
+                        <span class="how__num" aria-hidden="true">2</span>
+                        <h3 class="how__title">We review the title and the car</h3>
+                        <p class="how__body">We check the title history, the ownership chain, and the car’s condition, then work out what it takes to fix the paperwork and what the car is worth after that.</p>
+                    </li>
+                    <li class="how__step">
+                        <span class="how__num" aria-hidden="true">3</span>
+                        <h3 class="how__title">You choose how to get out</h3>
+                        <p class="how__body">Trade it toward your next car or <a href="services/sell-exotic-car.html">sell it outright</a>. We lay out both options with real numbers.</p>
+                    </li>
+                    <li class="how__step">
+                        <span class="how__num" aria-hidden="true">4</span>
+                        <h3 class="how__title">We clear the paperwork and close</h3>
+                        <p class="how__body">Transfer, paperwork, and logistics are on us. You hand over the keys once the title issue is resolved.</p>
+                    </li>
+                </ol>
+                <p class="how__fee">Fees are set per engagement. There’s no published rate card.</p>
+            </div>
+        </section>
+
+        <section class="cars" id="cars" aria-labelledby="cars-heading">
+            <div class="cars__header">
+                <h2 class="section-heading" id="cars-heading">Cars we handle</h2>
+                <p class="cars__lede">Porsche, Ferrari, BMW M, Aston Martin, and other exotics. The photos are manufacturer press images, not cars we have for sale.</p>
+            </div>
+            <div class="cars__rail">
+                <figure class="cars__item">
                     <picture>
                         <source type="image/webp" srcset="images/card-porsche.webp">
-                        <img src="images/card-porsche.jpg" width="2000" height="1125" alt="Official Porsche photograph of a 911 Dakar in Moab, Rallye Design Package. Press vehicle, not inventory.">
+                        <img src="images/card-porsche.jpg" width="2000" height="1125" loading="lazy" alt="Official Porsche photograph of a 911 Dakar in Moab. Press vehicle, not inventory.">
                     </picture>
-                    </div>
-                    <div class="marque__copy">
-                        <h2>Porsche</h2>
-                        <p>911s, Macan, Cayenne, GT cars, and the rest of the list, sourced to spec, including complicated paper.</p>
-                    </div>
-                </article>
-                <article class="marque marque--bmw">
-                    <div class="marque__frame">
+                    <figcaption>Porsche</figcaption>
+                </figure>
+                <figure class="cars__item">
+                    <img src="images/press/ferrari-296-intro.jpg" width="1920" height="1080" loading="lazy" alt="Official Ferrari launch photograph of a red 296. Press vehicle, not Provenance inventory.">
+                    <figcaption>Ferrari</figcaption>
+                </figure>
+                <figure class="cars__item cars__item--bmw">
                     <picture>
                         <source type="image/webp" srcset="images/card-bmw.webp">
-                        <img src="images/card-bmw.jpg" width="1800" height="1200" alt="Official BMW launch photograph of an M4. Press vehicle, not inventory.">
+                        <img src="images/card-bmw.jpg" width="1800" height="1200" loading="lazy" alt="Official BMW launch photograph of an M4. Press vehicle, not inventory.">
                     </picture>
-                    </div>
-                    <div class="marque__copy">
-                        <h2>BMW</h2>
-                        <p>M cars, 3, 5, X. Mid-market through high-value, bought on your side of the table.</p>
-                    </div>
-                </article>
-                <article class="marque marque--ferrari">
-                    <div class="marque__frame">
-                    <img src="images/press/ferrari-296-launch.jpg" width="1200" height="628" alt="Official Ferrari launch photograph of a 296. Press vehicle, not Provenance inventory.">
-                    </div>
-                    <div class="marque__copy">
-                        <h2>Ferrari</h2>
-                        <p>296 allocation and sourcing, Roma, Purosangue, and used cars, bought on your side of the table rather than a dealer waitlist pitch.</p>
-                    </div>
-                </article>
-                <article class="marque marque--preowned">
-                    <div class="marque__frame">
-                    <img src="images/press/ferrari-f430-2.jpg" width="768" height="1024" alt="Official Ferrari photograph of an F430. Press vehicle used to illustrate pre-owned exotic sourcing, not inventory.">
-                    </div>
-                    <div class="marque__copy">
-                        <h2>Pre-owned exotics</h2>
-                        <p>Used Ferrari, Aston Martin, Porsche, and similar. Private party, out of state, and cars that never hit a local lot.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="break" aria-label="Ferrari 296 launch photograph">
-            <img src="images/press/ferrari-296-intro.jpg" width="1920" height="1080" alt="Official Ferrari launch photograph of a 296. Press vehicle, not Provenance inventory.">
-        </section>
-
-        <section class="complex" id="complex">
-            <div class="complex__header">
-                <h2 class="section-heading">The deals that stall other buyers</h2>
-                <p class="complex__lede">If the car is right and the paper is a mess, that is still a deal. We work titles, ownership chains, and condition so the purchase actually closes.</p>
-            </div>
-            <div class="complex__grid">
-                <article class="complex__card">
-                    <h3 class="complex__name">Title in transit</h3>
-                    <p class="complex__body">The car is sold. The title is still moving. We keep the transaction alive and get the paper into your name instead of letting the deal die in the mail.</p>
-                    <a class="complex__link" href="blog/buying-a-car-with-title-in-transit-texas.html">Title in transit in Texas</a>
-                </article>
-                <article class="complex__card">
-                    <h3 class="complex__name">Not in the seller’s name</h3>
-                    <p class="complex__body">Estate, company title, skipped transfers, out-of-state owner. We work the chain of ownership rather than walking because the name on the title does not match the person with the keys.</p>
-                    <a class="complex__link" href="blog/buying-a-car-not-in-the-sellers-name-texas.html">When the name does not match</a>
-                </article>
-                <article class="complex__card">
-                    <h3 class="complex__name">Salvage, crash, damage</h3>
-                    <p class="complex__body">Branded titles, rebuilt, flood, accident history. We inspect, price the actual car, and close when the numbers still work, without pretending it is a clean example.</p>
-                    <a class="complex__link" href="blog/buying-salvage-or-rebuilt-title-porsche-bmw-texas.html">Salvage Porsche and BMW</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="gallery" aria-label="Official launch photography">
-            <div class="gallery__rail">
-                <figure class="gallery__item">
-                    <picture>
-                        <source type="image/webp" srcset="images/press/dakar-03.webp">
-                        <img src="images/press/dakar-03.jpg" width="2000" height="1125" alt="Official Porsche photograph of a Shade Green 911 Dakar, rear three-quarter in Moab.">
-                    </picture>
-                </figure>
-                <figure class="gallery__item gallery__item--offset">
-                    <picture>
-                        <source type="image/webp" srcset="images/press/dakar-05.webp">
-                        <img src="images/press/dakar-05.jpg" width="2000" height="1125" alt="Official Porsche photograph of a 911 Dakar at a desert filling station.">
-                    </picture>
-                </figure>
-                <figure class="gallery__item">
-                    <picture>
-                        <source type="image/webp" srcset="images/press/dakar-07.webp">
-                        <img src="images/press/dakar-07.jpg" width="2000" height="1125" alt="Official Porsche photograph of a 911 Dakar in dune light.">
-                    </picture>
-                </figure>
-            </div>
-        </section>
-
-        <section class="break" aria-label="Porsche 911 Dakar launch photograph">
-            <picture>
-                <source type="image/webp" srcset="images/press/dakar-01.webp">
-                <img src="images/press/dakar-01.jpg" width="2000" height="1125" alt="Official Porsche photograph of a 911 Dakar climbing a dune. Press vehicle, not inventory.">
-            </picture>
-        </section>
-
-        <section class="preowned" id="preowned">
-            <div class="preowned__intro">
-                <h2 class="section-heading">Pre-owned exotic sourcing</h2>
-                <p class="preowned__lede">Used Ferrari, Aston Martin, Porsche, and other exotics. The car may be in another state, still titled to an estate, or sitting with a dealer who will not take a messy file. We buy that car on your side of the table. The F430 photographs are Ferrari press images, not cars we have for sale.</p>
-                <p class="preowned__links">
-                    <a href="blog/pre-owned-exotic-car-sourcing-texas.html">Pre-owned exotic sourcing in Texas</a>
-                    <a href="blog/ferrari-296-sourcing-texas.html">Ferrari 296 sourcing</a>
-                    <a href="services/exotic-car-sourcing.html">Sourcing service</a>
-                </p>
-            </div>
-            <div class="preowned__photos">
-                <figure class="preowned__shot">
-                    <img src="images/press/ferrari-f430-launch.jpg" width="1200" height="628" alt="Official Ferrari photograph of an F430. Press vehicle, not Provenance inventory.">
+                    <figcaption>BMW M</figcaption>
                 </figure>
             </div>
         </section>
@@ -376,60 +329,49 @@
         <section class="services" id="services">
             <div class="services__inner">
                 <div class="services__header">
-                    <h2 class="section-heading">How we acquire the car</h2>
-                    <p class="services__lede">Search, inspect, negotiate, title, deliver. You stay off the showroom floor and out of the paperwork pile.</p>
+                    <h2 class="section-heading">Need your next car too?</h2>
+                    <p class="services__lede">If you’re trading in, we can also buy your next car, working for you instead of the seller.</p>
                 </div>
                 <div class="services__list">
                     <article class="service-row">
-                        <h3 class="service-row__title">Vehicle acquisition</h3>
-                        <p class="service-row__desc">Porsche, BMW, Ferrari, Aston Martin, and other exotics. New allocations, private party, dealer, out of state. We find the car, negotiate on your behalf, and buy it.</p>
-                        <a class="service-row__link" href="services/new-vehicle-acquisition.html">Acquisition</a>
-                    </article>
-                    <article class="service-row">
-                        <h3 class="service-row__title">Complex transactions</h3>
-                        <p class="service-row__desc">Titles in transit, cars not in the seller’s name, salvage and damage, incomplete files. The car is only half the deal; the paper is the other half.</p>
-                        <a class="service-row__link" href="services/car-buying-consultant.html">Buyer’s agent</a>
+                        <h3 class="service-row__title">New and pre-owned exotics</h3>
+                        <p class="service-row__desc">Porsche, Ferrari, BMW, Aston Martin. We find the car, negotiate, and buy it from a dealer, a private seller, or out of state.</p>
+                        <a class="service-row__link" href="services/new-vehicle-acquisition.html">Vehicle acquisition</a>
                     </article>
                     <article class="service-row">
                         <h3 class="service-row__title">Hard-to-find sourcing</h3>
-                        <p class="service-row__desc">A particular spec, a used Ferrari or Aston that is not listed, a 296 path, a classic that has to be right. We search beyond what is sitting on a lot this week.</p>
-                        <a class="service-row__link" href="services/exotic-car-sourcing.html">Sourcing</a>
+                        <p class="service-row__desc">A specific spec, a used Ferrari or Aston that isn’t listed, a 296 allocation. We look past what’s on local lots this week.</p>
+                        <a class="service-row__link" href="services/exotic-car-sourcing.html">Hard-to-find sourcing</a>
                     </article>
                     <article class="service-row">
                         <h3 class="service-row__title">Classics and collectibles</h3>
-                        <p class="service-row__desc">Inspection, history, and negotiation for older cars where provenance actually matters, including messy ownership along the way.</p>
-                        <a class="service-row__link" href="services/classic-car-advisor.html">Classics</a>
-                    </article>
-                    <article class="service-row">
-                        <h3 class="service-row__title">When it is time to sell</h3>
-                        <p class="service-row__desc">Private sale, dealer, or auction. We manage disposition so you are not the one fielding the lowball texts.</p>
-                        <a class="service-row__link" href="services/sell-exotic-car.html">Disposition</a>
+                        <p class="service-row__desc">Inspection, history, and negotiation for older cars, where a car’s documented history matters as much as its condition.</p>
+                        <a class="service-row__link" href="services/classic-car-advisor.html">Classics and collectibles</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="about__inner">
-                <h2 class="about__headline">Your buyer. <em>Not the seller’s.</em></h2>
-                <div class="about__columns">
-                    <div class="about__col">
-                        <blockquote class="about__pullquote">Every dealership represents the seller. Provenance represents you.</blockquote>
-                    </div>
-                    <div class="about__col">
-                        <p class="about__body">Based in Austin, working across Texas. We acquire Porsche, BMW, Ferrari, Aston Martin, and other exotics — new and pre-owned — and we stay in the deals that stall on title, ownership, or condition.</p>
-                        <p class="about__body">Consultation is complimentary. Fees are tailored to the acquisition; there is no published rate card. WhatsApp and Signal if you would rather not email.</p>
-                        <a class="about__link" href="#contact">Start an acquisition</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
+        <section class="contact contact--split" id="contact">
             <div class="contact__inner">
-                <h2 class="contact__headline">Start an acquisition</h2>
-                <p class="contact__subtext">Tell us the car, the complication, or both. Private consultation. No showroom, no inventory pitch.</p>
-                <p class="contact__fee-note">Complimentary to begin. Fees are set per engagement.</p>
+                <div class="contact__aside">
+                    <h2 class="contact__headline">Start a <span class="nowrap">trade-in</span></h2>
+                    <p class="contact__subtext">Tell us the car and what’s wrong with the paperwork. The consultation is free and private. There’s no showroom and no sales pitch.</p>
+                    <dl class="contact__next">
+                        <div>
+                            <dt>What happens next</dt>
+                            <dd>We reply personally, usually with a few questions about the title and the car.</dd>
+                        </div>
+                        <div>
+                            <dt>Where we are</dt>
+                            <dd>Based in Austin, working across Texas.</dd>
+                        </div>
+                        <div>
+                            <dt>Prefer not to use the form</dt>
+                            <dd><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a><br>WhatsApp · <a href="https://signal.me/#eu/3Qt3tskYypWeG5ZsT9nigsOMLvf4CP4vXeK-FSj1GANJiJPJOipMdL6HtICsxm3g">Signal</a></dd>
+                        </div>
+                    </dl>
+                </div>
                 <form class="contact__form" id="contact-form">
                     <label class="contact__label" for="contact-name">Name</label>
                     <input type="text" name="name" id="contact-name" class="contact__input" autocomplete="name" required>
@@ -443,22 +385,20 @@
                     <label class="contact__label" for="contact-need">What do you need</label>
                     <select name="need" id="contact-need" class="contact__select" required>
                         <option value="" disabled selected>Select one</option>
-                        <option>Buy a Porsche, BMW, Ferrari, Aston Martin, or similar</option>
-                        <option>Pre-owned exotic sourcing</option>
-                        <option>Title in transit or not in the seller’s name</option>
-                        <option>Salvage, crash, or damage</option>
+                        <option>Trade in a car with no title</option>
+                        <option>Trade in a car with a rebuilt or salvage title</option>
+                        <option>Trade in a car that isn’t in my name</option>
+                        <option>Sell my car outright</option>
+                        <option>Buy my next car</option>
                         <option>Something else</option>
                     </select>
 
-                    <label class="contact__label" for="contact-message">Message</label>
-                    <textarea name="message" id="contact-message" class="contact__textarea" rows="4" required></textarea>
+                    <label class="contact__label" for="contact-message">The car and the situation</label>
+                    <textarea name="message" id="contact-message" class="contact__textarea" rows="5" aria-describedby="contact-message-hint" required></textarea>
+                    <p class="contact__hint" id="contact-message-hint">Year, make, model, and what’s wrong with the title.</p>
 
                     <button type="submit" class="btn btn--primary" id="contact-submit">Send inquiry</button>
                 </form>
-                <div class="contact__alt">
-                    <p><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a> · Austin · all of Texas</p>
-                    <p class="contact__channels">WhatsApp · <a href="https://signal.me/#eu/3Qt3tskYypWeG5ZsT9nigsOMLvf4CP4vXeK-FSj1GANJiJPJOipMdL6HtICsxm3g">Signal</a></p>
-                </div>
             </div>
         </section>
     </main>
@@ -468,17 +408,17 @@
             <div class="footer__top">
                 <div>
                     <p class="footer__wordmark">PROVENANCE</p>
-                    <p class="footer__blurb">Buyer-side acquisition for Porsche, BMW, Ferrari, Aston Martin, and other exotics. Texas.</p>
+                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems, and buying your next car for you. Texas.</p>
                 </div>
                 <div>
                     <p class="footer__section-title">Services</p>
                     <ul class="footer__links">
+                        <li><a href="services/sell-exotic-car.html">Sell or trade in</a></li>
+                        <li><a href="#complex">Title problems</a></li>
                         <li><a href="services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
-                        <li><a href="#complex">Complex deals</a></li>
                         <li><a href="services/exotic-car-sourcing.html">Sourcing</a></li>
-                        <li><a href="blog/">Guides</a></li>
                         <li><a href="services/classic-car-advisor.html">Classics</a></li>
-                        <li><a href="services/sell-exotic-car.html">Disposition</a></li>
+                        <li><a href="blog/">Guides</a></li>
                         <li><a href="inquiry.html">Contact</a></li>
                     </ul>
                 </div>
@@ -496,11 +436,10 @@
                     </div>
                 </div>
             </div>
-            <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG (911 Dakar launch), BMW AG (M4 launch), and Ferrari S.p.A. (296 and F430). Press vehicles shown are not Provenance inventory.</p>
+            <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG (911 Dakar launch), BMW AG (M4 launch), and Ferrari S.p.A. (296). Press vehicles shown are not Provenance inventory.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
