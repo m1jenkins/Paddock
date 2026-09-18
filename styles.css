@@ -1397,12 +1397,424 @@ h1, h2 {
     display: none;
 }
 
+/* =============================================
+   SERVICE PAGE (svc-*)
+   Type-on-paper hero with one press image, then
+   rule-divided sections. Shares .how, .faq__item
+   and .city-cta with the rest of the site.
+   ============================================= */
+.page-service .breadcrumb {
+    padding-bottom: 0;
+}
+
+.svc-hero {
+    padding: clamp(2rem, 4vw, 3.5rem) var(--gutter) var(--section);
+}
+
+.svc-hero__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+    gap: clamp(2.5rem, 5vw, 5.5rem);
+    align-items: end;
+}
+
+.svc-hero__title {
+    font-size: clamp(2.6rem, 5.2vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    margin-bottom: 1.5rem;
+}
+
+.svc-hero__title em {
+    font-style: italic;
+}
+
+.svc-hero__lede {
+    color: var(--ink-soft);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 33rem;
+    margin-bottom: 2rem;
+}
+
+.svc-hero__actions,
+.svc-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+}
+
+.svc-link,
+.svc-item__link {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 0.12rem;
+}
+
+.svc-link:hover,
+.svc-item__link:hover {
+    opacity: 0.6;
+}
+
+.svc-hero__figure {
+    margin: 0;
+}
+
+.svc-hero__figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: 50% 62%;
+    background: #20222a;
+}
+
+.svc-hero__figure figcaption {
+    padding-top: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+/* Statement: large serif claim, supporting copy offset right */
+.svc-statement {
+    padding: var(--section) var(--gutter);
+    border-top: 1px solid var(--rule);
+}
+
+.svc-statement__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.svc-statement__lead {
+    grid-column: 1 / span 9;
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    line-height: 1.14;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+}
+
+.svc-statement__body {
+    grid-column: 7 / -1;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    display: grid;
+    gap: 1.1rem;
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    line-height: 1.75;
+}
+
+/* Section header shared by routes and related services */
+.svc-routes {
+    padding: 0 var(--gutter) var(--section);
+}
+
+.svc-also {
+    padding: var(--section) var(--gutter);
+}
+
+.svc-routes__inner,
+.svc-also__inner,
+.svc-faq__inner,
+.svc-more__inner,
+.svc-facts__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.svc-section-head {
+    max-width: 40rem;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.svc-section-head .section-heading {
+    margin-bottom: 1rem;
+}
+
+.svc-section-head__lede {
+    color: var(--ink-soft);
+    font-size: 1.1rem;
+}
+
+.svc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: clamp(1.5rem, 3vw, 2.75rem);
+    row-gap: 2.5rem;
+}
+
+.svc-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 60rem;
+}
+
+.svc-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--ink);
+}
+
+.svc-item__name {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(1.45rem, 2vw, 1.75rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.85rem;
+}
+
+.svc-item__body {
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    flex: 1;
+}
+
+.svc-item__link {
+    align-self: flex-start;
+    margin-top: 1.4rem;
+}
+
+/* Order times and brands */
+.svc-facts {
+    background: var(--paper-2);
+    padding: var(--section) var(--gutter);
+}
+
+.svc-facts__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(3rem, 7vw, 7rem);
+}
+
+.svc-facts__heading {
+    font-size: clamp(1.7rem, 2.6vw, 2.25rem);
+    margin-bottom: 1.75rem;
+}
+
+.svc-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.svc-table tr {
+    border-top: 1px solid var(--rule-strong);
+}
+
+.svc-table tr:last-child {
+    border-bottom: 1px solid var(--rule-strong);
+}
+
+.svc-table th,
+.svc-table td {
+    padding: 1.1rem 0;
+    vertical-align: baseline;
+}
+
+.svc-table th {
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+    padding-right: 1.5rem;
+}
+
+.svc-table td {
+    text-align: right;
+    white-space: nowrap;
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    letter-spacing: -0.02em;
+    font-variant-numeric: lining-nums;
+}
+
+.svc-facts__note {
+    margin-top: 1.25rem;
+    font-size: 0.92rem;
+    color: var(--muted);
+    max-width: 30rem;
+}
+
+.svc-brands {
+    columns: 2;
+    column-gap: clamp(1.5rem, 3vw, 2.75rem);
+    border-top: 1px solid var(--rule-strong);
+}
+
+.svc-brands li {
+    break-inside: avoid;
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+}
+
+/* FAQ: heading left, answers right */
+.svc-faq {
+    padding: 0 var(--gutter) var(--section);
+}
+
+.svc-faq__inner {
+    padding-top: clamp(3rem, 6vw, 4.5rem);
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 6vw, 6rem);
+    align-items: start;
+}
+
+.svc-faq__heading {
+    position: sticky;
+    top: 6.5rem;
+}
+
+/* The section rule above already separates the first question */
+.svc-faq__list .faq__item:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.svc-faq__list .faq__question {
+    font-weight: 400;
+}
+
+.svc-faq__list .faq__answer {
+    max-width: 38rem;
+    line-height: 1.7;
+}
+
+.faq__answer a {
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule-strong);
+}
+
+.faq__answer a:hover {
+    border-bottom-color: var(--ink);
+}
+
+/* Guides and cities */
+.svc-more {
+    padding: clamp(3rem, 6vw, 4.5rem) var(--gutter);
+    border-top: 1px solid var(--rule);
+}
+
+.svc-more__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3rem clamp(3rem, 7vw, 7rem);
+}
+
+.svc-more__heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.svc-more__list {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.svc-more__list a {
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+}
+
+.svc-more__list a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+}
+
+.svc-more .service-cities__links {
+    margin-top: 0;
+}
+
+.svc-cta__email {
+    font-size: 0.9rem;
+    color: rgba(243, 240, 234, 0.76);
+    border-bottom: 1px solid rgba(243, 240, 234, 0.4);
+}
+
+.svc-cta__email:hover {
+    color: var(--paper);
+    border-bottom-color: var(--paper);
+}
+
+.page-service .footer {
+    border-top: 1px solid rgba(243, 240, 234, 0.12);
+}
+
+@media (max-width: 960px) {
+    .svc-hero__inner,
+    .svc-facts__inner,
+    .svc-faq__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-statement__lead,
+    .svc-statement__body {
+        grid-column: 1 / -1;
+    }
+
+    .svc-statement__body {
+        max-width: 40rem;
+    }
+
+    .svc-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .svc-faq__heading {
+        position: static;
+    }
+}
+
+@media (max-width: 720px) {
+    .svc-hero {
+        padding-top: 1.5rem;
+    }
+
+    .svc-hero__title {
+        font-size: clamp(2.3rem, 10vw, 2.9rem);
+    }
+
+    .svc-hero__figure img {
+        aspect-ratio: 3 / 2;
+    }
+
+    .svc-grid,
+    .svc-grid--two,
+    .svc-more__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-brands {
+        column-gap: 1.25rem;
+    }
+
+    .svc-brands li {
+        font-size: 1.1rem;
+    }
+}
+
 #complex,
 #how,
 #cars,
 #services,
 #contact,
-#about {
+#about,
+#process,
+#routes,
+#faq {
     scroll-margin-top: 4.75rem;
 }
 
