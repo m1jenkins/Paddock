@@ -5,45 +5,57 @@
 (function () {
     'use strict';
 
-    // ---- Sticky nav with background swap ----
-    const nav = document.getElementById('nav');
-    const hero = document.getElementById('hero');
+    var nav = document.getElementById('nav');
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var mobileClose = document.getElementById('mobile-close');
 
     function onScroll() {
+        if (!nav) return;
         if (window.scrollY > 60) {
             nav.classList.add('scrolled');
         } else {
             nav.classList.remove('scrolled');
         }
     }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
 
-    // ---- Mobile menu ----
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileClose = document.getElementById('mobile-close');
-    const mobileLinks = mobileMenu.querySelectorAll('a');
+    if (nav) {
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
 
     function openMenu() {
+        if (!mobileMenu) return;
         mobileMenu.classList.add('open');
         document.body.style.overflow = 'hidden';
+        if (hamburger) hamburger.setAttribute('aria-expanded', 'true');
+        if (mobileClose) mobileClose.focus();
     }
 
     function closeMenu() {
+        if (!mobileMenu) return;
         mobileMenu.classList.remove('open');
         document.body.style.overflow = '';
+        if (hamburger) {
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.focus();
+        }
     }
 
-    hamburger.addEventListener('click', openMenu);
-    mobileClose.addEventListener('click', closeMenu);
-    mobileLinks.forEach(function (link) {
-        link.addEventListener('click', closeMenu);
-    });
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', openMenu);
+        if (mobileClose) mobileClose.addEventListener('click', closeMenu);
+        mobileMenu.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', closeMenu);
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMenu();
+            }
+        });
+    }
 
-    // ---- Scroll-reveal (IntersectionObserver) ----
     var reveals = document.querySelectorAll('.reveal');
-
     if ('IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
@@ -56,70 +68,55 @@
             threshold: 0.15,
             rootMargin: '0px 0px -40px 0px'
         });
-
         reveals.forEach(function (el) {
             observer.observe(el);
         });
     } else {
-        // Fallback: just show everything
         reveals.forEach(function (el) {
             el.classList.add('visible');
         });
     }
 
-    // ---- Smooth scroll for anchor links (fallback for older browsers) ----
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
-            var target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                var offset = nav.offsetHeight + 8;
-                var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({ top: top, behavior: 'smooth' });
-            }
+            var id = this.getAttribute('href');
+            if (!id || id === '#') return;
+            var target = document.querySelector(id);
+            if (!target) return;
+            e.preventDefault();
+            var offset = nav ? nav.offsetHeight + 8 : 0;
+            var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: top, behavior: 'smooth' });
         });
     });
 
-    // ---- Contact form (Google Sheets Integration) ----
     var form = document.getElementById('contact-form');
     if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             var btn = document.getElementById('contact-submit');
-            var originalText = btn.textContent;
-            
-            // Web App URL for Google Sheets integration
             var scriptURL = 'https://script.google.com/macros/s/AKfycbzd4i7cn8vj9O8j2dhvQVdEk6ltNPweToX-oppo_N6tlzykdl7MsT77ii_cYYTDbCK6wA/exec';
 
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
-            btn.style.opacity = '0.7';
-            btn.style.cursor = 'not-allowed';
+            if (btn) {
+                btn.textContent = 'Sending…';
+                btn.disabled = true;
+            }
 
-            var formData = new FormData(form);
-
-            fetch(scriptURL, { 
-                method: 'POST', 
-                body: formData, 
-                mode: 'no-cors' // Allows submitting without dealing with strict CORS policy
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form),
+                mode: 'no-cors'
             })
-            .then(function() {
-                btn.textContent = 'Inquiry Sent';
-                btn.style.opacity = '0.5';
-                btn.style.cursor = 'default';
-                form.reset();
-                
-                // Redirect to success page for conversion tracking
-                window.location.href = 'success.html';
-            })
-            .catch(function(error) {
-                console.error('Error!', error.message);
-                btn.textContent = 'Failed. Try Again.';
-                btn.disabled = false;
-                btn.style.opacity = '';
-                btn.style.cursor = 'pointer';
-            });
+                .then(function () {
+                    window.location.href = 'success.html';
+                })
+                .catch(function (error) {
+                    console.error('Error!', error.message);
+                    if (btn) {
+                        btn.textContent = 'Failed. Try again.';
+                        btn.disabled = false;
+                    }
+                });
         });
     }
-
 })();
