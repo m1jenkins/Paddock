@@ -118,6 +118,10 @@ h1, h2 {
     display: none;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
     display: inline-flex;
@@ -400,6 +404,15 @@ h1, h2 {
     max-width: 38rem;
 }
 
+.page-home .hero__copy {
+    max-width: 64rem;
+}
+
+.page-home .hero__headline {
+    font-size: clamp(2.75rem, 5vw, 4.25rem);
+    line-height: 1.02;
+}
+
 .hero__headline {
     font-family: var(--serif);
     font-size: clamp(3rem, 8.2vw, 5.85rem);
@@ -433,6 +446,26 @@ h1, h2 {
     color: rgba(243, 240, 234, 0.86);
     max-width: 32rem;
     margin-bottom: 1.85rem;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+}
+
+.hero__secondary {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--paper);
+    border-bottom: 1px solid rgba(243, 240, 234, 0.5);
+    padding-bottom: 0.12rem;
+}
+
+.hero__secondary:hover {
+    border-bottom-color: var(--paper);
 }
 
 /* Inner-page heroes (city, service, inquiry) */
@@ -471,81 +504,57 @@ h1, h2 {
 }
 
 /* =============================================
-   POSITION
+   TITLE PROBLEMS
    ============================================= */
-.position {
+.titles {
     padding: var(--section) var(--gutter);
-    border-bottom: 1px solid var(--rule);
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
-.position__inner {
-    max-width: 52rem;
+.titles__header {
+    max-width: 40rem;
+    margin-bottom: clamp(3rem, 6vw, 4.5rem);
 }
 
-.position__statement {
-    font-family: var(--serif);
-    font-size: clamp(1.7rem, 3.4vw, 2.65rem);
-    line-height: 1.22;
-    letter-spacing: -0.03em;
-    color: var(--ink);
-}
-
-/* =============================================
-   COMPLEX DEALS
-   ============================================= */
-.complex {
-    padding: var(--section) var(--gutter);
-}
-
-.complex__header {
-    max-width: 38rem;
-    margin-bottom: clamp(2.5rem, 5vw, 4rem);
-}
-
-.complex__lede {
+.titles__lede {
     color: var(--ink-soft);
-    font-size: 1.05rem;
-    max-width: 34rem;
+    font-size: 1.1rem;
+    max-width: 36rem;
 }
 
-.complex__grid {
+.titles__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--rule);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: clamp(1.5rem, 3vw, 2.75rem);
 }
 
-.complex__card {
-    padding: 1.75rem 1.5rem 1.75rem 0;
-    border-right: 1px solid var(--rule);
+.titles__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--ink);
 }
 
-.complex__card:last-child {
-    border-right: 0;
-    padding-right: 0;
-}
-
-.complex__card:not(:first-child) {
-    padding-left: 1.75rem;
-}
-
-.complex__name {
+.titles__name {
     font-family: var(--serif);
-    font-size: clamp(1.55rem, 2.2vw, 1.9rem);
+    font-weight: 400;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
     letter-spacing: -0.03em;
-    margin-bottom: 0.85rem;
+    line-height: 1.1;
+    margin-bottom: 0.9rem;
 }
 
-.complex__body {
+.titles__body {
     color: var(--ink-soft);
     font-size: 0.98rem;
     line-height: 1.65;
-    max-width: 22rem;
+    flex: 1;
 }
 
-.complex__link {
-    display: inline-block;
-    margin-top: 1.15rem;
+.titles__link {
+    align-self: flex-start;
+    margin-top: 1.4rem;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -553,185 +562,148 @@ h1, h2 {
     padding-bottom: 0.12rem;
 }
 
-.complex__link:hover {
+.titles__link:hover {
     opacity: 0.6;
 }
 
 /* =============================================
-   PHOTO CARDS
+   HOW IT WORKS
    ============================================= */
-.marques {
-    padding: 0 var(--gutter) var(--section);
+.how {
+    padding: var(--section) var(--gutter);
+    background: var(--ink);
+    color: var(--paper);
 }
 
-.marques__grid {
+.how__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.how .section-heading {
+    color: var(--paper);
+}
+
+.how__header {
+    max-width: 40rem;
+    margin-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.how__lede {
+    color: rgba(243, 240, 234, 0.72);
+    font-size: 1.1rem;
+}
+
+.how__steps {
+    list-style: none;
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 0.85rem;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: clamp(1.5rem, 3vw, 2.75rem);
+    row-gap: 3rem;
 }
 
-.marque {
-    position: relative;
-    overflow: visible;
-    color: var(--ink);
-    display: flex;
-    flex-direction: column;
+.how__step {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(243, 240, 234, 0.24);
 }
 
-.marque__frame {
-    position: relative;
-    min-height: 28rem;
-    overflow: hidden;
-}
-
-.marque__frame picture,
-.marque__frame img,
-.marque picture,
-.marque img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.marque img {
-    object-fit: cover;
-    transition: transform 0.9s var(--ease);
-}
-
-.marque--bmw img {
-    object-position: 70% 40%;
-}
-
-.marque--preowned img {
-    object-position: 50% 18%;
-}
-
-.marque:last-child img {
-    object-position: 50% 18%;
-}
-
-.marque:hover img {
-    transform: scale(1.04);
-}
-
-.marque::after {
-    display: none;
-}
-
-.marque__copy {
-    position: relative;
-    z-index: 1;
-    padding: 1.1rem 0 0;
-}
-
-.marque__copy h2,
-.marque__copy h3 {
+.how__num {
+    display: block;
     font-family: var(--serif);
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: clamp(2.6rem, 4vw, 3.4rem);
+    line-height: 1;
     letter-spacing: -0.03em;
-    margin-bottom: 0.4rem;
-    color: var(--ink);
+    color: rgba(243, 240, 234, 0.4);
+    margin-bottom: 1.5rem;
+    font-variant-numeric: lining-nums;
 }
 
-.marque__copy p {
-    color: var(--ink-soft);
-    font-size: 0.95rem;
-    max-width: 22rem;
+.how__title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(1.3rem, 1.7vw, 1.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+    text-wrap: balance;
+}
+
+.how__body {
+    color: rgba(243, 240, 234, 0.72);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.how__body a {
+    color: var(--paper);
+    border-bottom: 1px solid rgba(243, 240, 234, 0.5);
+}
+
+.how__body a:hover {
+    border-bottom-color: var(--paper);
+}
+
+.how__fee {
+    margin-top: clamp(3rem, 6vw, 4.5rem);
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(243, 240, 234, 0.24);
+    font-size: 0.9rem;
+    color: rgba(243, 240, 234, 0.6);
 }
 
 /* =============================================
-   GALLERY + BREAK
+   CARS WE HANDLE
    ============================================= */
-.gallery {
-    padding: 0 var(--gutter) var(--section);
+.cars {
+    padding: var(--section) var(--gutter) 0;
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
-.gallery__rail {
+.cars__header {
     display: grid;
-    grid-template-columns: 1.25fr 0.9fr 1.1fr;
-    gap: 0.75rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
     align-items: end;
+    margin-bottom: 2.5rem;
 }
 
-.gallery__item {
-    margin: 0;
+.cars__header .section-heading {
+    margin-bottom: 0;
 }
 
-.gallery__item img {
-    width: 100%;
-    height: 24rem;
-    object-fit: cover;
-}
-
-.gallery__item--offset img {
-    height: 18.5rem;
-}
-
-.break {
-    position: relative;
-    min-height: 72svh;
-    overflow: hidden;
-}
-
-.break picture,
-.break img {
-    display: block;
-    width: 100%;
-    height: 72svh;
-    object-fit: cover;
-    object-position: 55% 45%;
-}
-
-.preowned {
-    padding: 0 var(--gutter) var(--section);
-}
-
-.preowned__intro {
-    max-width: 42rem;
-    margin-bottom: 2.25rem;
-}
-
-.preowned__lede {
+.cars__lede {
     color: var(--ink-soft);
-    margin-top: 0.85rem;
+    max-width: 30rem;
+    justify-self: end;
 }
 
-.preowned__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
-    margin-top: 1.15rem;
-}
-
-.preowned__links a {
-    color: var(--ink);
-    font-size: 0.88rem;
-    letter-spacing: 0.02em;
-    text-decoration: underline;
-    text-underline-offset: 0.22em;
-}
-
-.preowned__photos {
+.cars__rail {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.85rem;
 }
 
-.preowned__shot {
+.cars__item {
     margin: 0;
 }
 
-.preowned__shot img {
+.cars__item img {
     width: 100%;
-    height: 28rem;
+    aspect-ratio: 4 / 3;
+    height: auto;
     object-fit: cover;
-    display: block;
 }
 
-.preowned__shot--tall img {
-    object-position: 50% 20%;
+.cars__item--bmw img {
+    object-position: 35% 30%;
+}
+
+.cars__item figcaption {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+    padding-top: 0.9rem;
 }
 
 .blog-post__figure {
@@ -750,7 +722,6 @@ h1, h2 {
    ============================================= */
 .services {
     padding: var(--section) var(--gutter);
-    border-top: 1px solid var(--rule);
 }
 
 .services__inner {
@@ -976,6 +947,66 @@ h1, h2 {
 .contact__alt a:hover {
     border-bottom-color: var(--ink);
     color: var(--ink);
+}
+
+.contact__hint {
+    font-size: 0.84rem;
+    color: var(--muted);
+    margin-top: 0.35rem;
+}
+
+/* Homepage: intro and direct contact beside the form */
+.contact--split {
+    border-top: 1px solid var(--rule);
+}
+
+.contact--split .contact__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+}
+
+.contact--split .contact__subtext {
+    max-width: 30rem;
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact--split .contact__form {
+    margin-bottom: 0;
+}
+
+.contact__next {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 30rem;
+}
+
+.contact__next > div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+}
+
+.contact__next dt {
+    font-size: 0.84rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.contact__next dd {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+}
+
+.contact__next a {
+    border-bottom: 1px solid var(--rule-strong);
+}
+
+.contact__next a:hover {
+    border-bottom-color: var(--ink);
 }
 
 .page-inquiry .contact {
@@ -1367,12 +1398,11 @@ h1, h2 {
 }
 
 #complex,
+#how,
+#cars,
 #services,
 #contact,
-#about,
-#acquire,
-#position,
-#preowned {
+#about {
     scroll-margin-top: 4.75rem;
 }
 
@@ -1380,34 +1410,22 @@ h1, h2 {
    RESPONSIVE
    ============================================= */
 @media (max-width: 960px) {
-    .complex__grid,
-    .marques__grid,
     .about__columns,
     .services-summary__grid,
     .footer__top,
-    .gallery__rail,
-    .preowned__photos {
+    .cars__header,
+    .contact--split .contact__inner {
         grid-template-columns: 1fr;
     }
 
-    .gallery__item img,
-    .gallery__item--offset img {
-        height: 18rem;
+    .titles__grid,
+    .how__steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
     }
 
-    .preowned__shot img {
-        height: 20rem;
-    }
-
-    .complex__card,
-    .complex__card:not(:first-child) {
-        padding: 1.5rem 0;
-        border-right: 0;
-        border-bottom: 1px solid var(--rule);
-    }
-
-    .marque__frame {
-        min-height: 20rem;
+    .cars__lede {
+        justify-self: start;
     }
 
     .service-row {
@@ -1441,8 +1459,9 @@ h1, h2 {
         max-width: 100%;
     }
 
-    .hero__headline {
-        font-size: clamp(2.15rem, 6.4vw, 3.1rem);
+    .hero__headline,
+    .page-home .hero__headline {
+        font-size: clamp(2.4rem, 6.4vw, 3.4rem);
     }
 }
 
@@ -1453,16 +1472,29 @@ h1, h2 {
         padding: 6.5rem var(--gutter) 2.6rem;
     }
 
-    .hero__headline {
+    .hero__headline,
+    .page-home .hero__headline {
         font-size: clamp(2.05rem, 9vw, 2.55rem);
         line-height: 1.02;
     }
 
-    .break,
-    .break img,
-    .break picture {
-        min-height: 52svh;
-        height: 52svh;
+    .hero__scrim {
+        background: linear-gradient(180deg, rgba(22, 21, 19, 0.3) 0%, transparent 30%, rgba(22, 21, 19, 0.5) 55%, rgba(22, 21, 19, 0.82) 100%);
+    }
+
+    .titles__grid,
+    .how__steps,
+    .cars__rail {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .how__num {
+        margin-bottom: 1rem;
+    }
+
+    .cars__item img {
+        aspect-ratio: 3 / 2;
     }
 
     .city-hero,
