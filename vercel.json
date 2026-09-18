@@ -2,14 +2,14 @@
   "redirects": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "provenance-auto.com" }],
-      "destination": "https://www.provenance-auto.com/",
+      "has": [{ "type": "host", "value": "www.provenance-auto.com" }],
+      "destination": "https://provenance-auto.com/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "provenance-auto.com" }],
-      "destination": "https://www.provenance-auto.com/:path*",
+      "has": [{ "type": "host", "value": "www.provenance-auto.com" }],
+      "destination": "https://provenance-auto.com/:path*",
       "permanent": true
     }
   ],
