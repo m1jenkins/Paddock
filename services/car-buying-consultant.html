@@ -46,76 +46,6 @@
     }
     </script>
 
-    <!-- JSON-LD Schema: FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What does a personal car buying consultant do?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A personal car buying consultant helps you find, evaluate, and acquire the right vehicle, providing objective advice, market knowledge, and negotiation expertise to ensure you make the best possible purchase."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does a personal car buying consultation cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Every engagement begins with a complimentary consultation. Our advisory fees are tailored to the scope of each engagement — from a single consultation to full-service vehicle search and acquisition. We provide transparent fee proposals before any commitment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you help me choose between different types of cars?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. That's exactly what this service is designed for. Whether you're choosing between a Porsche Cayenne and a BMW X5 M, a Mercedes-AMG GT and a Porsche 911, or a Range Rover and a Cadillac Escalade, we provide objective, expert guidance based on your specific needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you help with used car purchases too?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Our Personal Automotive Advisory covers both new and pre-owned vehicle purchases. For used vehicles, we also conduct thorough pre-purchase inspections, vehicle history verification, and market value analysis to ensure you're making a sound purchase."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- JSON-LD Schema: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://provenance-auto.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://provenance-auto.com/#services"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Personal Automotive Advisory",
-          "item": "https://provenance-auto.com/services/car-buying-consultant.html"
-        }
-      ]
-    }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -137,41 +67,12 @@
         <div class="nav__inner">
             <a href="/" class="nav__wordmark">PROVENANCE</a>
             <div class="nav__end">
-                <ul class="nav__links" id="nav-links">
-                    <li><a href="/#services">Services</a></li>
-                    <li><a href="/#complex">Complex deals</a></li>
-                    <li><a href="/inquiry.html">Contact</a></li>
-                </ul>
-                <a href="/inquiry.html" class="btn nav__cta">Start an acquisition</a>
-                <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                </button>
+                <a href="/#contact" class="btn nav__cta">Start a trade-in</a>
             </div>
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.25"/>
-            </svg>
-        </button>
-        <ul class="mobile-menu__links">
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/#complex">Complex deals</a></li>
-            <li><a href="/inquiry.html">Contact</a></li>
-        </ul>
-        <a href="/inquiry.html" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
-    </div>
-
     <main id="main">
-        <!-- ===== BREADCRUMB ===== -->
-        <div class="breadcrumb">
-            <div class="breadcrumb__inner">
-                <a href="/">Home</a> <span class="breadcrumb__sep">›</span> <a href="/#services">Services</a> <span class="breadcrumb__sep">›</span> <span>Personal Automotive Advisory</span>
-            </div>
-        </div>
 
         <!-- ===== SERVICE HERO ===== -->
         <section class="city-hero">
@@ -179,7 +80,7 @@
                 <p class="hero__label">PERSONAL AUTOMOTIVE ADVISORY</p>
                 <h1 class="hero__headline">Personal Car Buying Consultant</h1>
                 <p class="hero__subtext">Buyer-side help choosing and closing the car — including Porsche, BMW, Ferrari, Aston Martin, and the paper that stalls a typical purchase.</p>
-                <a href="/inquiry.html" class="btn btn--premium">
+                <a href="/#contact" class="btn btn--premium">
                     <span class="btn__text">Start an acquisition</span>
                     <span class="btn__icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +96,7 @@
             <div class="service-detail__inner reveal">
                 <div class="service-detail__section">
                     <h2 class="service-detail__subheading">Title in transit and cars not in the seller’s name</h2>
-                    <p class="service-detail__text">A buyer’s representative is also the person who stays in the file when the title is late or the name on the title is not the person with the keys. Estate, company, skipped transfer, lender hold. We work the chain instead of walking. Guides: <a href="/blog/buying-a-car-with-title-in-transit-texas.html">title in transit</a>, <a href="/blog/buying-a-car-not-in-the-sellers-name-texas.html">name mismatches</a>, <a href="/blog/buying-salvage-or-rebuilt-title-porsche-bmw-texas.html">salvage Porsche and BMW</a>.</p>
+                    <p class="service-detail__text">A buyer’s representative is also the person who stays in the file when the title is late or the name on the title is not the person with the keys. Estate, company, skipped transfer, lender hold. We work the chain instead of walking. Guides: title in transit, name mismatches, salvage Porsche and BMW.</p>
                 </div>
                 <div class="service-detail__section">
                     <h3 class="service-detail__subheading">Your Automotive Advisor, Not a Salesman</h3>
@@ -224,60 +125,12 @@
             </div>
         </section>
 
-        <!-- ===== FAQ ===== -->
-        <section class="faq">
-            <div class="faq__inner reveal">
-                <p class="section-label">FREQUENTLY ASKED QUESTIONS</p>
-                <h2 class="section-heading">Personal Automotive Advisory — FAQ</h2>
-                <div class="faq__list">
-                    <div class="faq__item">
-                        <h3 class="faq__question">What does a personal car buying consultant do?</h3>
-                        <p class="faq__answer">A personal car buying consultant helps you find, evaluate, and acquire the right vehicle, providing objective advice, market knowledge, and negotiation expertise to ensure you make the best possible purchase.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">How much does a personal car buying consultation cost?</h3>
-                        <p class="faq__answer">Every engagement begins with a complimentary consultation. Our advisory fees are tailored to the scope of each engagement — from a single consultation to full-service vehicle search and acquisition. We provide transparent fee proposals before any commitment.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Can you help me choose between different types of cars?</h3>
-                        <p class="faq__answer">Absolutely. That's exactly what this service is designed for. Whether you're choosing between a Porsche Cayenne and a BMW X5 M, a Mercedes-AMG GT and a Porsche 911, or a Range Rover and a Cadillac Escalade, we provide objective, expert guidance based on your specific needs.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Do you help with used car purchases too?</h3>
-                        <p class="faq__answer">Yes. Our Personal Automotive Advisory covers both new and pre-owned vehicle purchases. For used vehicles, we also conduct thorough pre-purchase inspections, vehicle history verification, and market value analysis to ensure you're making a sound purchase.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== CITIES SERVED ===== -->
-        <section class="service-cities">
-            <div class="service-cities__inner reveal">
-                <p class="section-label">AVAILABLE ACROSS TEXAS</p>
-                <h2 class="section-heading">Texas</h2>
-                <div class="service-cities__links">
-                    <a href="/houston.html">Houston</a>
-                    <a href="/dallas.html">Dallas</a>
-                    <a href="/san-antonio.html">San Antonio</a>
-                    <a href="/austin.html">Austin</a>
-                    <a href="/fort-worth.html">Fort Worth</a>
-                    <a href="/plano.html">Plano</a>
-                    <a href="/frisco.html">Frisco</a>
-                    <a href="/the-woodlands.html">The Woodlands</a>
-                    <a href="/sugar-land.html">Sugar Land</a>
-                    <a href="/southlake.html">Southlake</a>
-                    <a href="/blog/buying-a-car-with-title-in-transit-texas.html">Title in transit</a>
-                    <a href="/blog/buying-a-car-not-in-the-sellers-name-texas.html">Name mismatch</a>
-                </div>
-            </div>
-        </section>
-
         <!-- ===== CTA ===== -->
         <section class="city-cta">
             <div class="city-cta__inner reveal">
                 <h2 class="section-heading">Ready to Get Started?</h2>
                 <p class="city-cta__text">Schedule a complimentary consultation with Provenance. We'll discuss your automotive goals and show you how our personal automotive advisory service works.</p>
-                <a href="/inquiry.html" class="btn btn--premium">
+                <a href="/#contact" class="btn btn--premium">
                     <span class="btn__text">Start an acquisition</span>
                     <span class="btn__icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,32 +147,14 @@
             <div class="footer__top">
                 <div>
                     <p class="footer__wordmark">PROVENANCE</p>
-                    <p class="footer__blurb">Buyer-side acquisition for Porsche, BMW, Ferrari, Aston Martin, and other exotics. Texas.</p>
+                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems. Based in Austin, working across Texas.</p>
                 </div>
                 <div>
-                    <p class="footer__section-title">Services</p>
+                    <p class="footer__section-title">Contact</p>
                     <ul class="footer__links">
-                        <li><a href="/services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
-                        <li><a href="/#complex">Complex deals</a></li>
-                        <li><a href="/services/exotic-car-sourcing.html">Sourcing</a></li>
-                        <li><a href="/services/classic-car-advisor.html">Classics</a></li>
-                        <li><a href="/services/sell-exotic-car.html">Disposition</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/inquiry.html">Contact</a></li>
+                        <li><a href="/#contact">Send an inquiry</a></li>
+                        <li><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a></li>
                     </ul>
-                </div>
-                <div>
-                    <p class="footer__section-title">Texas</p>
-                    <div class="footer__cities-list">
-                        <a href="/houston.html">Houston</a>
-                        <a href="/dallas.html">Dallas</a>
-                        <a href="/austin.html">Austin</a>
-                        <a href="/san-antonio.html">San Antonio</a>
-                        <a href="/fort-worth.html">Fort Worth</a>
-                        <a href="/the-woodlands.html">The Woodlands</a>
-                        <a href="/plano.html">Plano</a>
-                        <a href="/frisco.html">Frisco</a>
-                    </div>
                 </div>
             </div>
             <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG, BMW AG, and Ferrari S.p.A. Press vehicles shown are not Provenance inventory.</p>

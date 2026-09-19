@@ -1119,31 +1119,9 @@ h1, h2 {
 /* =============================================
    INNER: breadcrumb, city, service, blog, faq
    ============================================= */
-.breadcrumb {
-    position: relative;
-    top: auto;
-    padding: 6.6rem var(--gutter) 0;
-    background: var(--paper);
-}
-
-.breadcrumb__inner {
-    max-width: 90rem;
-    margin: 0 auto;
-    font-size: 0.8rem;
-    color: var(--muted);
-}
-
-.breadcrumb a {
-    color: var(--ink);
-}
-
-.breadcrumb a:hover {
-    opacity: 0.6;
-}
-
-.breadcrumb__sep {
-    margin: 0 0.45rem;
-    color: var(--muted);
+/* Clear the fixed nav on inner pages */
+.page-inner:not(.page-success) main > :first-child {
+    padding-top: 8.6rem;
 }
 
 .city-content,
@@ -1403,10 +1381,6 @@ h1, h2 {
    rule-divided sections. Shares .how, .faq__item
    and .city-cta with the rest of the site.
    ============================================= */
-.page-service .breadcrumb {
-    padding-bottom: 0;
-}
-
 .svc-hero {
     padding: clamp(2rem, 4vw, 3.5rem) var(--gutter) var(--section);
 }
@@ -1859,10 +1833,6 @@ h1, h2 {
         display: flex;
     }
 
-    .nav__cta {
-        display: none;
-    }
-
     .hero__copy,
     .hero__subtext,
     .contact__inner,
@@ -1914,8 +1884,8 @@ h1, h2 {
         padding: 7.4rem var(--gutter) 3rem;
     }
 
-    .breadcrumb {
-        padding-top: 6.2rem;
+    .page-inner:not(.page-success) main > :first-child {
+        padding-top: 7.4rem;
     }
 
     .footer__cities-list {

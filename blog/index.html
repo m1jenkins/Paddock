@@ -17,18 +17,6 @@
     <meta property="og:description" content="Title in transit, name mismatches, salvage Porsches, used Ferraris, and 296 sourcing for Texas buyers.">
     <meta property="og:image" content="https://provenance-auto.com/images/hero-porsche.jpg">
 
-    <!-- JSON-LD Schema: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://provenance-auto.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://provenance-auto.com/blog/" }
-      ]
-    }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -50,41 +38,12 @@
         <div class="nav__inner">
             <a href="/" class="nav__wordmark">PROVENANCE</a>
             <div class="nav__end">
-                <ul class="nav__links" id="nav-links">
-                    <li><a href="/#services">Services</a></li>
-                    <li><a href="/#complex">Complex deals</a></li>
-                    <li><a href="/inquiry.html">Contact</a></li>
-                </ul>
-                <a href="/inquiry.html" class="btn nav__cta">Start an acquisition</a>
-                <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                </button>
+                <a href="/#contact" class="btn nav__cta">Start a trade-in</a>
             </div>
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.25"/>
-            </svg>
-        </button>
-        <ul class="mobile-menu__links">
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/#complex">Complex deals</a></li>
-            <li><a href="/inquiry.html">Contact</a></li>
-        </ul>
-        <a href="/inquiry.html" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
-    </div>
-
     <main id="main">
-        <!-- ===== BREADCRUMB ===== -->
-        <div class="breadcrumb">
-            <div class="breadcrumb__inner">
-                <a href="/">Home</a> <span class="breadcrumb__sep">›</span> <span>Guides</span>
-            </div>
-        </div>
 
         <!-- ===== BLOG HEADER ===== -->
         <section class="blog-header">
@@ -102,7 +61,6 @@
                         <p class="blog-card__category">COMPLEX DEALS</p>
                         <h2 class="blog-card__title">Buying a Car With a Title in Transit in Texas</h2>
                         <p class="blog-card__excerpt">How a Texas purchase still closes when the title is at a lender, a dealer, or in the mail — and the risks of paying before the paper is in hand.</p>
-                        <p class="blog-card__meta">September 18, 2026</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -110,7 +68,6 @@
                         <p class="blog-card__category">COMPLEX DEALS</p>
                         <h2 class="blog-card__title">Buying a Car Not in the Seller’s Name in Texas</h2>
                         <p class="blog-card__excerpt">Estate cars, company titles, skipped transfers. What has to be true before you wire money.</p>
-                        <p class="blog-card__meta">September 18, 2026</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -118,7 +75,6 @@
                         <p class="blog-card__category">COMPLEX DEALS</p>
                         <h2 class="blog-card__title">Buying a Salvage or Rebuilt-Title Porsche or BMW in Texas</h2>
                         <p class="blog-card__excerpt">A branded title is a history, not a mood. Inspection, pricing, and when the deal should die.</p>
-                        <p class="blog-card__meta">September 18, 2026</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -126,7 +82,6 @@
                         <p class="blog-card__category">SOURCING</p>
                         <h2 class="blog-card__title">Pre-Owned Exotic Car Sourcing in Texas</h2>
                         <p class="blog-card__excerpt">Used Ferrari, Aston Martin, and Porsche — private party, out of state, and cars that never hit a local lot. Press photos, not inventory.</p>
-                        <p class="blog-card__meta">September 18, 2026</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -134,7 +89,6 @@
                         <p class="blog-card__category">SOURCING</p>
                         <h2 class="blog-card__title">Ferrari 296 Sourcing in Texas</h2>
                         <p class="blog-card__excerpt">Allocation versus used 296s for Texas buyers. Ferrari press photography, not a car on our floor.</p>
-                        <p class="blog-card__meta">September 18, 2026</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -142,7 +96,6 @@
                         <p class="blog-card__category">BUYING GUIDE</p>
                         <h2 class="blog-card__title">How to Buy a Porsche GT3 in Texas Without Overpaying</h2>
                         <p class="blog-card__excerpt">Expert guide on buying a Porsche 911 GT3 in Texas. Learn about allocations, pricing strategies, spec considerations, and how to avoid dealer markups.</p>
-                        <p class="blog-card__meta">April 1, 2026 · 8 min read</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -150,7 +103,6 @@
                         <p class="blog-card__category">EDUCATIONAL</p>
                         <h2 class="blog-card__title">What Does a Luxury Car Consultant Actually Do?</h2>
                         <p class="blog-card__excerpt">Learn what a luxury car consultant does, how they differ from dealers, and why Texas buyers use automotive advisors to source exotic and collectible vehicles.</p>
-                        <p class="blog-card__meta">March 25, 2026 · 6 min read</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -158,7 +110,6 @@
                         <p class="blog-card__category">BUYING GUIDE</p>
                         <h2 class="blog-card__title">Ferrari Allocation Guide: What Texas Buyers Need to Know</h2>
                         <p class="blog-card__excerpt">Everything Texas buyers need to know about Ferrari allocations. Learn how the system works, how to get your first Ferrari, and how to navigate waitlists in Texas.</p>
-                        <p class="blog-card__meta">March 18, 2026 · 10 min read</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -166,7 +117,6 @@
                         <p class="blog-card__category">LOCAL CONTENT</p>
                         <h2 class="blog-card__title">Top 5 Driving Roads in the Texas Hill Country</h2>
                         <p class="blog-card__excerpt">Discover the best driving roads in the Texas Hill Country for exotic and sports cars. From Twisted Sisters to Lime Creek Road, explore Texas's finest routes.</p>
-                        <p class="blog-card__meta">March 10, 2026 · 7 min read</p>
                     </a>
                 </article>
                 <article class="blog-card">
@@ -174,7 +124,6 @@
                         <p class="blog-card__category">EDUCATIONAL</p>
                         <h2 class="blog-card__title">Pre-Purchase Inspection Checklist for Exotic Cars</h2>
                         <p class="blog-card__excerpt">Comprehensive pre-purchase inspection checklist for buying exotic and luxury cars. Know what to look for before purchasing a Ferrari, Porsche, McLaren, or Lamborghini.</p>
-                        <p class="blog-card__meta">March 4, 2026 · 9 min read</p>
                     </a>
                 </article>
             </div>
@@ -186,26 +135,14 @@
             <div class="footer__top">
                 <div>
                     <p class="footer__wordmark">PROVENANCE</p>
-                    <p class="footer__blurb">Buyer-side acquisition for Porsche, BMW, Ferrari, Aston Martin, and other exotics. Texas.</p>
+                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems. Based in Austin, working across Texas.</p>
                 </div>
                 <div>
-                    <p class="footer__section-title">Services</p>
+                    <p class="footer__section-title">Contact</p>
                     <ul class="footer__links">
-                        <li><a href="/services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
-                        <li><a href="/#complex">Complex deals</a></li>
-                        <li><a href="/blog/">Guides</a></li>
-                        <li><a href="/inquiry.html">Contact</a></li>
+                        <li><a href="/#contact">Send an inquiry</a></li>
+                        <li><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a></li>
                     </ul>
-                </div>
-                <div>
-                    <p class="footer__section-title">Texas</p>
-                    <div class="footer__cities-list">
-                        <a href="/houston.html">Houston</a>
-                        <a href="/dallas.html">Dallas</a>
-                        <a href="/austin.html">Austin</a>
-                        <a href="/san-antonio.html">San Antonio</a>
-                        <a href="/fort-worth.html">Fort Worth</a>
-                    </div>
                 </div>
             </div>
             <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG, BMW AG, and Ferrari S.p.A. Press vehicles shown are not Provenance inventory.</p>

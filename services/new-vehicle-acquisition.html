@@ -47,84 +47,6 @@
     }
     </script>
 
-    <!-- JSON-LD Schema: FAQPage (keep in sync with the visible questions) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do Porsche allocations work in Texas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Porsche Cars North America allocates new cars to authorized dealers based on each dealer’s sales history and relationship with Porsche. The dealer then chooses which customers get them. High-demand models like the GT3, GT3 RS, and 911 S/T have the strictest criteria. We use our dealer relationships to get you an allocation faster and at a fair price."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you get me a new car without a dealer markup?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Often. Markups, which dealers call market adjustments, are common on high-demand models. We use our dealer relationships to negotiate MSRP or close to it wherever a dealer will sell at that price."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need a purchase history with the dealer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For some brands it matters a lot, Ferrari especially. We can introduce you to dealers and work out a route to your first allocation even if you haven’t bought from them before."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does it cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The first consultation is free. After that, fees are set per engagement. There’s no published rate card."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you only buy from Texas dealers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Our clients are in Texas, but we work with dealers across the state and elsewhere in the US."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- JSON-LD Schema: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://provenance-auto.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Your next car",
-          "item": "https://provenance-auto.com/#services"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "New cars",
-          "item": "https://provenance-auto.com/services/new-vehicle-acquisition.html"
-        }
-      ]
-    }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -146,40 +68,12 @@
         <div class="nav__inner">
             <a href="/" class="nav__wordmark">PROVENANCE</a>
             <div class="nav__end">
-                <ul class="nav__links" id="nav-links">
-                    <li><a href="/#complex">Title problems</a></li>
-                    <li><a href="/#services">Your next car</a></li>
-                    <li><a href="/inquiry.html">Contact</a></li>
-                </ul>
-                <a href="/inquiry.html" class="btn nav__cta">Start an acquisition</a>
-                <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                </button>
+                <a href="/#contact" class="btn nav__cta">Start a trade-in</a>
             </div>
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.25"/>
-            </svg>
-        </button>
-        <ul class="mobile-menu__links">
-            <li><a href="/#complex">Title problems</a></li>
-            <li><a href="/#services">Your next car</a></li>
-            <li><a href="/inquiry.html">Contact</a></li>
-        </ul>
-        <a href="/inquiry.html" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
-    </div>
-
     <main id="main">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <div class="breadcrumb__inner">
-                <a href="/">Home</a> <span class="breadcrumb__sep" aria-hidden="true">›</span> <a href="/#services">Your next car</a> <span class="breadcrumb__sep" aria-hidden="true">›</span> <span aria-current="page">New cars</span>
-            </div>
-        </nav>
 
         <!-- ===== HERO ===== -->
         <section class="svc-hero">
@@ -188,8 +82,7 @@
                     <h1 class="svc-hero__title">New exotics, <em>ordered and bought for you</em></h1>
                     <p class="svc-hero__lede">A new GT3, 296, or specced Aston Martin rarely sits on a dealer’s lot. It comes through an allocation or a factory order, often with a waitlist and a markup. We find the route to your car, negotiate the price, and handle the purchase.</p>
                     <div class="svc-hero__actions">
-                        <a href="/inquiry.html" class="btn btn--primary">Start an acquisition</a>
-                        <a href="#process" class="svc-link">How it works</a>
+                        <a href="/#contact" class="btn btn--primary">Start an acquisition</a>
                     </div>
                 </div>
                 <figure class="svc-hero__figure">
@@ -238,37 +131,6 @@
             </div>
         </section>
 
-        <!-- ===== PROCESS ===== -->
-        <section class="how" id="process" aria-labelledby="process-heading">
-            <div class="how__inner">
-                <div class="how__header">
-                    <h2 class="section-heading" id="process-heading">How it works</h2>
-                </div>
-                <ol class="how__steps">
-                    <li class="how__step">
-                        <span class="how__num" aria-hidden="true">1</span>
-                        <h3 class="how__title">Tell us the car</h3>
-                        <p class="how__body">The model, the spec if you have one, when you want it, and your budget. The first consultation is free.</p>
-                    </li>
-                    <li class="how__step">
-                        <span class="how__num" aria-hidden="true">2</span>
-                        <h3 class="how__title">We find the route</h3>
-                        <p class="how__body">We ask our dealer contacts and work out which route gets you the car, how long it should take, and what it should cost.</p>
-                    </li>
-                    <li class="how__step">
-                        <span class="how__num" aria-hidden="true">3</span>
-                        <h3 class="how__title">We negotiate</h3>
-                        <p class="how__body">We handle the back-and-forth with the dealer and push for MSRP. You don’t sit through a sales pitch.</p>
-                    </li>
-                    <li class="how__step">
-                        <span class="how__num" aria-hidden="true">4</span>
-                        <h3 class="how__title">We see it through</h3>
-                        <p class="how__body">We keep you updated through the build and handle the paperwork until the car is yours.</p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
         <!-- ===== TIMING & BRANDS ===== -->
         <section class="svc-facts" aria-label="Order times and brands">
             <div class="svc-facts__inner">
@@ -312,92 +174,13 @@
             </div>
         </section>
 
-        <!-- ===== RELATED SERVICES ===== -->
-        <section class="svc-also" aria-labelledby="also-heading">
-            <div class="svc-also__inner">
-                <div class="svc-section-head">
-                    <h2 class="section-heading" id="also-heading">Trading in, or buying used?</h2>
-                </div>
-                <div class="svc-grid svc-grid--two">
-                    <article class="svc-item">
-                        <h3 class="svc-item__name">Trade in your current car</h3>
-                        <p class="svc-item__body">We can take it in the same deal, including a car with no title, a rebuilt or salvage title, or one that isn’t in your name.</p>
-                        <a class="svc-item__link" href="/#complex">Trade-ins and title problems</a>
-                    </article>
-                    <article class="svc-item">
-                        <h3 class="svc-item__name">Buy pre-owned instead</h3>
-                        <p class="svc-item__body">With a used 296 or another pre-owned exotic, there’s nothing to order. The work is finding the right car and checking it before you buy, which is what our sourcing service does.</p>
-                        <a class="svc-item__link" href="/services/exotic-car-sourcing.html">Exotic car sourcing</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FAQ ===== -->
-        <section class="svc-faq" id="faq" aria-labelledby="faq-heading">
-            <div class="svc-faq__inner">
-                <h2 class="section-heading svc-faq__heading" id="faq-heading">Questions</h2>
-                <div class="svc-faq__list">
-                    <div class="faq__item">
-                        <h3 class="faq__question">How do Porsche allocations work in Texas?</h3>
-                        <p class="faq__answer">Porsche Cars North America allocates new cars to authorized dealers based on each dealer’s sales history and relationship with Porsche. The dealer then chooses which customers get them. High-demand models like the GT3, GT3 RS, and 911 S/T have the strictest criteria. We use our dealer relationships to get you an allocation faster and at a fair price.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Can you get me a new car without a dealer markup?</h3>
-                        <p class="faq__answer">Often. Markups, which dealers call market adjustments, are common on high-demand models. We use our dealer relationships to negotiate MSRP or close to it wherever a dealer will sell at that price.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Do I need a purchase history with the dealer?</h3>
-                        <p class="faq__answer">For some brands it matters a lot, Ferrari especially. We can introduce you to dealers and work out a route to your first allocation even if you haven’t bought from them before. Our <a href="/blog/ferrari-allocation-guide-texas.html">Ferrari allocation guide</a> explains how that system works.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">What does it cost?</h3>
-                        <p class="faq__answer">The first consultation is free. After that, fees are set per engagement. There’s no published rate card.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Do you only buy from Texas dealers?</h3>
-                        <p class="faq__answer">No. Our clients are in Texas, but we work with dealers across the state and elsewhere in the US.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== GUIDES & CITIES ===== -->
-        <section class="svc-more" aria-label="Guides and cities">
-            <div class="svc-more__inner">
-                <div>
-                    <h2 class="svc-more__heading">Guides</h2>
-                    <ul class="svc-more__list">
-                        <li><a href="/blog/ferrari-allocation-guide-texas.html">How Ferrari allocations work</a></li>
-                        <li><a href="/blog/how-to-buy-porsche-gt3-texas.html">Buying a Porsche GT3 in Texas</a></li>
-                        <li><a href="/blog/ferrari-296-sourcing-texas.html">Finding a Ferrari 296</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="svc-more__heading">Across Texas</h2>
-                    <div class="service-cities__links">
-                        <a href="/houston.html">Houston</a>
-                        <a href="/dallas.html">Dallas</a>
-                        <a href="/san-antonio.html">San Antonio</a>
-                        <a href="/austin.html">Austin</a>
-                        <a href="/fort-worth.html">Fort Worth</a>
-                        <a href="/plano.html">Plano</a>
-                        <a href="/frisco.html">Frisco</a>
-                        <a href="/the-woodlands.html">The Woodlands</a>
-                        <a href="/sugar-land.html">Sugar Land</a>
-                        <a href="/southlake.html">Southlake</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ===== CTA ===== -->
         <section class="city-cta">
             <div class="city-cta__inner">
                 <h2 class="section-heading">Tell us which car you want</h2>
                 <p class="city-cta__text">Send the model, the spec if you have one, and when you’d like it. We reply personally, usually with a few questions.</p>
                 <div class="svc-cta__actions">
-                    <a href="/inquiry.html" class="btn btn--premium">Start an acquisition</a>
+                    <a href="/#contact" class="btn btn--premium">Start an acquisition</a>
                     <a href="mailto:mason@provenance-auto.com" class="svc-cta__email">mason@provenance-auto.com</a>
                 </div>
             </div>
@@ -409,32 +192,14 @@
             <div class="footer__top">
                 <div>
                     <p class="footer__wordmark">PROVENANCE</p>
-                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems, and buying your next car for you. Texas.</p>
+                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems. Based in Austin, working across Texas.</p>
                 </div>
                 <div>
-                    <p class="footer__section-title">Services</p>
+                    <p class="footer__section-title">Contact</p>
                     <ul class="footer__links">
-                        <li><a href="/services/sell-exotic-car.html">Sell or trade in</a></li>
-                        <li><a href="/#complex">Title problems</a></li>
-                        <li><a href="/services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
-                        <li><a href="/services/exotic-car-sourcing.html">Sourcing</a></li>
-                        <li><a href="/services/classic-car-advisor.html">Classics</a></li>
-                        <li><a href="/blog/">Guides</a></li>
-                        <li><a href="/inquiry.html">Contact</a></li>
+                        <li><a href="/#contact">Send an inquiry</a></li>
+                        <li><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a></li>
                     </ul>
-                </div>
-                <div>
-                    <p class="footer__section-title">Texas</p>
-                    <div class="footer__cities-list">
-                        <a href="/houston.html">Houston</a>
-                        <a href="/dallas.html">Dallas</a>
-                        <a href="/austin.html">Austin</a>
-                        <a href="/san-antonio.html">San Antonio</a>
-                        <a href="/fort-worth.html">Fort Worth</a>
-                        <a href="/the-woodlands.html">The Woodlands</a>
-                        <a href="/plano.html">Plano</a>
-                        <a href="/frisco.html">Frisco</a>
-                    </div>
                 </div>
             </div>
             <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Ferrari S.p.A. (296). Press vehicles shown are not Provenance inventory.</p>

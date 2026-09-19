@@ -2,14 +2,34 @@
   "redirects": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "www.provenance-auto.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.provenance-auto.com"
+        }
+      ],
       "destination": "https://provenance-auto.com/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.provenance-auto.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.provenance-auto.com"
+        }
+      ],
       "destination": "https://provenance-auto.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/inquiry.html",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/inquiry",
+      "destination": "/#contact",
       "permanent": true
     }
   ],
@@ -17,16 +37,31 @@
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/robots.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     }
   ]

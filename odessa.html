@@ -68,54 +68,6 @@
     }
     </script>
 
-    <!-- JSON-LD Schema: FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How does Provenance serve Odessa car buyers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We serve as your independent car consultant in Odessa, leveraging our statewide network to find and deliver luxury and exotic vehicles directly to the Permian Basin."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you source specific vehicles for Odessa clients?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We specialize in finding specific vehicles — from particular-spec Porsches to rare Ferraris — using our dealer relationships and global sourcing network, then manage delivery to Odessa."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- JSON-LD Schema: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://provenance-auto.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Odessa",
-          "item": "https://provenance-auto.com/odessa.html"
-        }
-      ]
-    }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -137,41 +89,12 @@
         <div class="nav__inner">
             <a href="/" class="nav__wordmark">PROVENANCE</a>
             <div class="nav__end">
-                <ul class="nav__links" id="nav-links">
-                    <li><a href="/#services">Services</a></li>
-                    <li><a href="/#complex">Complex deals</a></li>
-                    <li><a href="/inquiry.html">Contact</a></li>
-                </ul>
-                <a href="/inquiry.html" class="btn nav__cta">Start an acquisition</a>
-                <button class="nav__toggle" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                </button>
+                <a href="/#contact" class="btn nav__cta">Start a trade-in</a>
             </div>
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu__close" id="mobile-close" type="button" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.25"/>
-            </svg>
-        </button>
-        <ul class="mobile-menu__links">
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/#complex">Complex deals</a></li>
-            <li><a href="/inquiry.html">Contact</a></li>
-        </ul>
-        <a href="/inquiry.html" class="btn btn--primary mobile-menu__cta">Start an acquisition</a>
-    </div>
-
     <main id="main">
-        <!-- ===== BREADCRUMB ===== -->
-        <div class="breadcrumb">
-            <div class="breadcrumb__inner">
-                <a href="/">Home</a> <span class="breadcrumb__sep">›</span> <span>Odessa</span>
-            </div>
-        </div>
 
         <!-- ===== CITY HERO ===== -->
         <section class="city-hero">
@@ -179,7 +102,7 @@
                 <p class="hero__label">VEHICLE ACQUISITION · ODESSA, TEXAS</p>
                 <h1 class="hero__headline">Acquisition in<br><span>Odessa.</span></h1>
                 <p class="hero__subtext">Buyer-side acquisition for Porsche, BMW, Ferrari, Aston Martin, and other exotics. Titles in transit, cars not in the seller’s name, salvage and damage, messy paperwork.</p>
-                <a href="/inquiry.html" class="btn btn--premium">
+                <a href="/#contact" class="btn btn--premium">
                     <span class="btn__text">Start an acquisition</span>
                     <span class="btn__icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,65 +123,12 @@
             </div>
         </section>
 
-        <!-- ===== SERVICES SUMMARY ===== -->
-        <section class="services-summary">
-            <div class="services-summary__inner reveal">
-                <p class="section-label">OUR SERVICES IN ODESSA</p>
-                <h2 class="section-heading">How We Help Odessa Car Buyers</h2>
-                <div class="services-summary__grid">
-                    <div class="services-summary__item">
-                        <h3>New Vehicle Acquisition</h3>
-                        <p>Factory orders and allocations for Porsche, Ferrari, BMW, Aston Martin, and similar — plus the paper work when a title stalls.</p>
-                        <a href="/services/new-vehicle-acquisition.html">Learn More →</a>
-                    </div>
-                    <div class="services-summary__item">
-                        <h3>Exotic &amp; Supercar Sourcing</h3>
-                        <p>Pre-owned and new exotic sourcing: Ferrari, Aston Martin, Porsche, and cars that are not on a local lot.</p>
-                        <a href="/services/exotic-car-sourcing.html">Learn More →</a>
-                    </div>
-                    <div class="services-summary__item">
-                        <h3>Classic &amp; Collectible Advisory</h3>
-                        <p>Pre-purchase inspection, provenance verification, and auction representation for collectible vehicles.</p>
-                        <a href="/services/classic-car-advisor.html">Learn More →</a>
-                    </div>
-                    <div class="services-summary__item">
-                        <h3>Collection Disposition</h3>
-                        <p>Full-service management of vehicle sales including auction consignment and private transactions.</p>
-                        <a href="/services/sell-exotic-car.html">Learn More →</a>
-                    </div>
-                    <div class="services-summary__item">
-                        <h3>Personal Automotive Advisory</h3>
-                        <p>One-on-one consulting for selecting the perfect luxury, sports, or daily vehicle.</p>
-                        <a href="/services/car-buying-consultant.html">Learn More →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FAQ ===== -->
-        <section class="faq">
-            <div class="faq__inner reveal">
-                <p class="section-label">FREQUENTLY ASKED QUESTIONS</p>
-                <h2 class="section-heading">Luxury Car Buying in Odessa — FAQ</h2>
-                <div class="faq__list">
-                    <div class="faq__item">
-                        <h3 class="faq__question">How does Provenance serve Odessa car buyers?</h3>
-                        <p class="faq__answer">We serve as your independent car consultant in Odessa, leveraging our statewide network to find and deliver luxury and exotic vehicles directly to the Permian Basin.</p>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Can you source specific vehicles for Odessa clients?</h3>
-                        <p class="faq__answer">Yes. We specialize in finding specific vehicles — from particular-spec Porsches to rare Ferraris — using our dealer relationships and global sourcing network, then manage delivery to Odessa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ===== CTA ===== -->
         <section class="city-cta">
             <div class="city-cta__inner reveal">
                 <h2 class="section-heading">Ready to Find Your Next Car in Odessa?</h2>
                 <p class="city-cta__text">Tell us the car or the complication. Complimentary to start — fees are tailored to the acquisition.</p>
-                <a href="/inquiry.html" class="btn btn--premium">
+                <a href="/#contact" class="btn btn--premium">
                     <span class="btn__text">Start an acquisition</span>
                     <span class="btn__icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -275,32 +145,14 @@
             <div class="footer__top">
                 <div>
                     <p class="footer__wordmark">PROVENANCE</p>
-                    <p class="footer__blurb">Buyer-side acquisition for Porsche, BMW, Ferrari, Aston Martin, and other exotics. Texas.</p>
+                    <p class="footer__blurb">Trade-ins and sales of exotic cars with title problems. Based in Austin, working across Texas.</p>
                 </div>
                 <div>
-                    <p class="footer__section-title">Services</p>
+                    <p class="footer__section-title">Contact</p>
                     <ul class="footer__links">
-                        <li><a href="/services/new-vehicle-acquisition.html">Vehicle acquisition</a></li>
-                        <li><a href="/#complex">Complex deals</a></li>
-                        <li><a href="/services/exotic-car-sourcing.html">Sourcing</a></li>
-                        <li><a href="/services/classic-car-advisor.html">Classics</a></li>
-                        <li><a href="/services/sell-exotic-car.html">Disposition</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/inquiry.html">Contact</a></li>
+                        <li><a href="/#contact">Send an inquiry</a></li>
+                        <li><a href="mailto:mason@provenance-auto.com">mason@provenance-auto.com</a></li>
                     </ul>
-                </div>
-                <div>
-                    <p class="footer__section-title">Texas</p>
-                    <div class="footer__cities-list">
-                        <a href="/houston.html">Houston</a>
-                        <a href="/dallas.html">Dallas</a>
-                        <a href="/austin.html">Austin</a>
-                        <a href="/san-antonio.html">San Antonio</a>
-                        <a href="/fort-worth.html">Fort Worth</a>
-                        <a href="/the-woodlands.html">The Woodlands</a>
-                        <a href="/plano.html">Plano</a>
-                        <a href="/frisco.html">Frisco</a>
-                    </div>
                 </div>
             </div>
             <p class="footer__copy">© 2026 Provenance Auto Advisory. Photography: Porsche AG, BMW AG, and Ferrari S.p.A. Press vehicles shown are not Provenance inventory.</p>
